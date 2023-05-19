@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import {About,Contact, Experience, Feedbacks,Hero,Navbar,Tech,Works,StarsCanvas} from './components'
+import Tweets from "./components/Tweets";
 
 const  App=()=> {
   return (
@@ -10,6 +11,7 @@ const  App=()=> {
       <Hero/>
     </div>
     <About/>
+    <Tweets/>
     <Experience/>
     <Tech/>
     <Works/>

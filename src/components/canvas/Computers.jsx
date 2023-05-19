@@ -54,7 +54,8 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
+    <Canvas 
+
       frameloop='demand'
       shadows
       dpr={[1, 2]}

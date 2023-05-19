@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
+import resume from '/src/Abhishek.pdf'
+import { Router } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -20,22 +22,57 @@ const Navbar = () => {
           }}
         >
 
-          <img src={logo} alt="logo" className='w-9 h-9 
-        object-contain ' />
-          <p className='text-white text-[18px] 
+          <img src={logo} alt="logo" className='w-20 h-26 absolute sm:block hidden  left-10  mt-5  
+        object-contain  ' />
+          <p className='text-white text-[18px]  mt-4 
         font-bold cursor-pointer'>
-            Abhishek Yadav <span className='sm:block hidden'> | Web Developer</span></p>
+            Abhishek Yadav <span className='sm:block hidden'>  | Web Developer</span></p>
         </Link>
 
+
+
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+
+          <a href={resume}
+            download="Abhishek Abhishek.pdf">
+            <button className={`${active === Link.title ? "  text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(Link.title)}   >
+
+              <span className='flex items-center' >  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg> Download Cv</span>
+
+
+            </button>
+          </a>
+
+
+
+
+
+
           {navLinks.map((Link) => (
             <li key={Link.id}
               className={`${active === Link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}
             >
               <a href={` #${Link.id}`}> {Link.title}</a>
+
+
             </li>
+
+
           ))}
+
+          <a href="https://abhishek-bio.onrender.com/" target="_blank" >
+
+            <button className={`${active === Link.title ? "  text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(Link.title)}   >
+
+              <span className='flex items-center' > Socials</span>
+            </button>
+          </a>
+
+
 
         </ul>
 
@@ -49,24 +86,53 @@ const Navbar = () => {
           <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient 
           absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
 
-          
-        <ul className='list-none flex  justfy-end items-start flex-col gap-4'>
-          {navLinks.map((Link) => (
-            <li key={Link.id}
-              className={`${active === Link.title ? "text-white" : "text-secondary"} font-poppins font-medium  cursor-pointer  text-[16px]`}
 
-              onClick={() =>
-                {
-                  setToggle(!toggle);
-                  setActive(Link.title)}
+            <ul className='list-none flex  justfy-end items-start flex-col gap-4'>
 
-                } 
-            >
-              <a href={` #${Link.id}`}> {Link.title}</a>
-            </li>
-          ))}
+              <a href={resume}
+                download="Abhishek Abhishek.pdf">
+                <button className={`${active === Link.title ? "  text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+                  onClick={() => setActive(Link.title)}   >
 
-        </ul>
+                  <span className='flex items-center' >  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg> Download Cv</span>
+
+
+                </button>
+              </a>
+
+              {navLinks.map((Link) => (
+
+                <li key={Link.id}
+                  className={`${active === Link.title ? "text-white" : "text-secondary"} font-poppins font-medium  cursor-pointer  text-[16px]`}
+
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(Link.title)
+                  }
+
+                  }
+                >
+                  <a href={` #${Link.id}`}> {Link.title}</a>
+
+                </li>
+
+              ))}
+
+
+              <a href="https://abhishek-bio.onrender.com/" target="_blank" >
+
+                <button className={`${active === Link.title ? "  text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+                  onClick={() => setActive(Link.title)}   >
+
+                  <span className='flex items-center' > Socials</span>
+                </button>
+              </a>
+
+
+
+
+            </ul>
+
 
 
 
