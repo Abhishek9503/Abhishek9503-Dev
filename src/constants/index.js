@@ -293,6 +293,74 @@ const projects = [
     image2:"https://password-generator-abhishek9503.onrender.com/",
     source_code_link: "https://github.com/Abhishek9503/Password-Generator",
   },
+  {
+    name: "Password Generator",
+    description:
+      " The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    image2:"https://password-generator-abhishek9503.onrender.com/",
+    source_code_link: "https://github.com/Abhishek9503/Password-Generator",
+  },
+
+  {
+    name: "Password Generator",
+    description:
+      " The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    image2:"https://password-generator-abhishek9503.onrender.com/",
+    source_code_link: "https://github.com/Abhishek9503/Password-Generator",
+  },
+
+  {
+    name: "Password Generator",
+    description:
+      " The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    image2:"https://password-generator-abhishek9503.onrender.com/",
+    source_code_link: "https://github.com/Abhishek9503/Password-Generator",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
