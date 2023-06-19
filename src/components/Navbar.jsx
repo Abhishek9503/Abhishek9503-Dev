@@ -22,11 +22,11 @@ const Navbar = () => {
           }}
         >
 
-          <img src={logo} alt="logo" className='w-20 h-26 absolute sm:block hidden  left-10  mt-5  
+          <img src={logo} alt="logo" className='w-16 h-20  
         object-contain  ' />
           <p className='text-white text-[18px]  mt-4 
-        font-bold cursor-pointer'>
-            Abhishek Yadav <span className='sm:block hidden'>  | Web Developer</span></p>
+        font-bold cursor-pointer flex'>
+            Abhishek Yadav &nbsp; <span className='sm:block hidden'>  | Web Developer</span></p>
         </Link>
 
 
@@ -73,6 +73,16 @@ const Navbar = () => {
           </a>
 
 
+          <a href="https://hashnode.com/@Abhishek9503" target="_blank" >
+
+<button className={`${active === Link.title ? "  text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+  onClick={() => setActive(Link.title)}   >
+
+  <span className='flex items-center' > Blogs</span>
+</button>
+</a>
+
+
 
         </ul>
 
@@ -100,6 +110,8 @@ const Navbar = () => {
                 </button>
               </a>
 
+              
+
               {navLinks.map((Link) => (
 
                 <li key={Link.id}
@@ -117,6 +129,16 @@ const Navbar = () => {
                 </li>
 
               ))}
+
+
+              <a href="https://hashnode.com/@Abhishek9503" target="_blank" >
+
+                <button className={`${active === Link.title ? "  text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+                  onClick={() => setActive(Link.title)}   >
+
+                  <span className='flex items-center' > Blogs</span>
+                </button>
+              </a>
 
 
               <a href="https://abhishek-bio.onrender.com/" target="_blank" >

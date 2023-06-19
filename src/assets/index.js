@@ -1,6 +1,6 @@
 import logo from "./logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
+import backend from "./backend.webp";
+import creator from "./creator.webp";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -30,6 +30,11 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import shoppingcart from "./shoppingcart.png";
+import studynotion from "./studynotion.png";
+import image11 from "./image11.png";
+import kavach from "./kavach.png";
+
 
 export {
   logo,
@@ -61,4 +66,8 @@ export {
   jobit,
   tripguide,
   blender,
+  shoppingcart,
+  studynotion,
+  image11,
+  kavach,
 };

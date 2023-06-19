@@ -51,19 +51,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        An enthusiastic and motivated Student in  the field of cCmputer Science
-         with a keen intereset  in Full Stack Development. I love to build software 
-         that maked an impact on my organization and the world.
-         I enjoy solving compolex problem and taking on challenging tasks. I am currently
-         learning  Data structure and algorithm for my intrest in problem solving.
+  An enthusiastic and motivated Student in  the field of Computer Science
+         with a keen interest  in Full Stack Development. I love to build software 
+         that makes an impact on my organization and the world.
+         I enjoy solving complex problem and taking on challenging tasks. I am currently
+         learning  Data structure and algorithm for my interest in problem solving.
          I am a quick learner and open to working in any technology . Detailed Oriented Consistency
-          and Hard work are some of my top qualitites . I believe consistent practice brings excellence.
-        
+          and Hard work are some of my top qualities . I believe consistent practice brings excellence.
 
 
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

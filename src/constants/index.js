@@ -19,11 +19,15 @@ import {
   starbucks,
   tesla,
   shopify,
+  studynotion,
   carrent,
   jobit,
   tripguide,
+  shoppingcart,
   threejs,
   blender,
+  image11,
+  kavach,
 } from "../assets";
 
 export const navLinks = [
@@ -35,10 +39,7 @@ export const navLinks = [
     id: "work",
     title: "Work",
   },
-  {
-    id: "tweets",
-    title: "Tweets",
-  },
+
   {
     id: "contact",
     title: "Contact",
@@ -46,20 +47,22 @@ export const navLinks = [
 ];
 
 const services = [
+
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
+    title: "Web Developer ",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "2🌟Leetcode ",
+    icon: web,
+  },
+
+  {
+    title: "Open Source",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "ML-Enthusiast" ,
     icon: creator,
   },
 ];
@@ -190,28 +193,33 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+    project:"Kavch Hackathon",
+    testimonial:kavach,
+    name: "Suraksha Sanket",
+    designation: "Advanced CCTV analytics solution",
+    company: " Suraksha-Sanket is a web application created to detect Crimes, Infiltration and Unauthorized access. A video analytics software that will use the Machine Learning Algorithms to detect criminal activities during live streaming of video cameras. ",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
+    source_code_link: "https://github.com/Abhishek9503",
   },
+  
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+    project:"Mega Project",
+    testimonial:studynotion,
+    name:"Study Notion",
+    designation: "Study Notion",
+    company: "Made through MERN stack, revolutionizes education with seamless connectivity and immersive learning experiences. Embrace the future of education as we redefine knowledge acquisition and empower learners worldwide.",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
+    source_code_link: "https://github.com/Abhishek9503",
   },
+  
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+    project:"3d Learning",
+    testimonial:image11,
+    name: "Blender Projects ",
+    designation: "Udemy",
+    company: "In the coming months, I will embark on an enriching journey to enhance my skills in 3D graphics and animation through the Udemy course on Blender. I will delve into the intricacies of modeling, texturing, lighting, rigging, animation, and visual effects, gaining a profound understanding of each aspect.",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
+    source_code_link: "https://github.com/Abhishek9503",
   },
 ];
 
@@ -219,7 +227,7 @@ const projects = [
   {
     name: "Placement Analyser",
     description:
-      "Campus placement processes in higher educational institutions can be complex and time-consuming, often requiring a lot of manual data entry and cleaning of past placement records. This creates a burden on the training and placement cells, making it difficult for them to conduct campus placement efficiently and effectively.",
+      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
     tags: [
       {
         name: "Html",
@@ -245,7 +253,7 @@ const projects = [
     ],
     image: carrent,
     image2:"https://placementanalyzer.onrender.com/",
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Abhishek9503/ecell_nitb_hack2k23_Cyber_knights",
   
     
   },
@@ -294,9 +302,9 @@ const projects = [
     source_code_link: "https://github.com/Abhishek9503/Password-Generator",
   },
   {
-    name: "Password Generator",
+    name: "Study Notion(frontend)",
     description:
-      " The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
+      "  I leveraged the power of router technology to create a seamless and intuitive user experience. By implementing a router framework such as React Router or Vue Router, I enabled dynamic routing within the application, allowing users to navigate between different pages without requiring full page reloads.",
     tags: [
       {
         name: "html",
@@ -311,15 +319,15 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    image2:"https://password-generator-abhishek9503.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/Password-Generator",
+    image: studynotion,
+    image2:"https://study-notion.netlify.app",
+    source_code_link: "https://github.com/Abhishek9503",
   },
 
   {
-    name: "Password Generator",
+    name: "Shopping Cart(Redux)",
     description:
-      " The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
+      "Shopping Cart web app leverages the Redux library to streamline and enhance the shopping experience. Through efficient state management, seamless browsing, a user-friendly cart and checkout process, real-time inventory updates, and personalized user profiles, your app simplifies and elevates online shopping",
     tags: [
       {
         name: "html",
@@ -334,33 +342,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    image2:"https://password-generator-abhishek9503.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/Password-Generator",
+    image: shoppingcart,
+    image2:"https://shopping-cart-abhishek9503.netlify.app/",
+    source_code_link: "https://github.com/Abhishek9503",
   },
 
-  {
-    name: "Password Generator",
-    description:
-      " The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javaScript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    image2:"https://password-generator-abhishek9503.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/Password-Generator",
-  },
+ 
 ];
 
 export { services, technologies, experiences, testimonials, projects };
