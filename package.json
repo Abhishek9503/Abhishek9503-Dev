@@ -1,9 +1,12 @@
 {
   "name": "my-protfolio",
+  "homepage": "https://Abhishek9503.github.io/My-ProtFolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -14,6 +17,7 @@
     "@react-three/drei": "^9.68.3",
     "@react-three/fiber": "^8.13.0",
     "framer-motion": "^10.12.10",
+    "gh-pages": "^5.0.0",
     "gsap": "^3.11.5",
     "maath": "^0.5.3",
     "react": "^18.2.0",
