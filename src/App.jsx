@@ -1,13 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 import {About,Contact, Experience, Feedbacks,Hero,Navbar,Tech,Works,StarsCanvas} from './components'
 import Tweets from "./components/Tweets";
-import PreLoader from "./components/PreLoader";
+// import PreLoader from "./components/PreLoader";
 // import { RingLoader } from "react-spinners";
 const  App=()=> {
   return (
 
     <>
-    <PreLoader/>
+    {/* <PreLoader/> */}
 
 
     <BrowserRouter>
