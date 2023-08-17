@@ -1,6 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import {About,Contact, Experience, Feedbacks,Hero,Navbar,Tech,Works,StarsCanvas} from './components'
 import Tweets from "./components/Tweets";
+import CV from "./components/CV";
+import Footer from "./components/Footer";
 // import PreLoader from "./components/PreLoader";
 // import { RingLoader } from "react-spinners";
 const  App=()=> {
@@ -27,10 +29,13 @@ const  App=()=> {
    <Works/>
    <Feedbacks/>
 
-   <div className="realtive z-0">
+   <div className="relative z-0">
      <Contact/>
      <StarsCanvas/>
    </div>
+
+
+  <Footer/>
 
 
  </div>

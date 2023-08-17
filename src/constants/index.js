@@ -28,7 +28,9 @@ import {
   blender,
   image11,
   kavach,
+  CV_Duncan
 } from "../assets";
+export const CVDuncan = CV_Duncan
 
 export const navLinks = [
   {
@@ -104,18 +106,18 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
+  {
+    name: "Docker",
+    icon: docker,
+  },
   {
     name: "git",
     icon: git,
   },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
+  {
+    name: "figma",
+    icon: figma,
+  },
   {
     name: "blender",
     icon: blender,
