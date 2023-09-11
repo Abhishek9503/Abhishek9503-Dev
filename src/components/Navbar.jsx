@@ -35,7 +35,7 @@ const Navbar = () => {
         <ul className='list-none hidden sm:flex flex-row gap-10'>
 
           <a href={resume}
-            download="Abhishek Abhishek.pdf">
+            download="Abhishek.pdf">
             <button className={`${active === Link.title ? "  text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}   >
 
