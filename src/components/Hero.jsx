@@ -117,6 +117,33 @@ import { Cursor, useTypewriter } from "react-simple-typewriter"
 
 import { styles } from "../styles"
 
+const ServiceCard = ({ index, title, icon }) => (
+  <Tilt className='xs:w-[250px] w-full'>
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+    >
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className='w-full'
+      >
+      
+       <div className="flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card"></div>
+
+       <div className="bg-avatar bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform" />
+       
+      </div>
+    </motion.div>
+  </Tilt>
+);
+
+
+
+
 const Hero = () => {
   const [text, count] = useTypewriter({
     words: [
@@ -173,6 +200,7 @@ const Hero = () => {
             <div className="bg-avatar bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform" />
           </div>
         </div>
+        
       </div>
     </section>
   )
