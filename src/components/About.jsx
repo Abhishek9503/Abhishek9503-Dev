@@ -55,7 +55,7 @@ const About = () => {
           </div >
           <div className='  flex items-center flex-wrap'>
             <img src={CVDuncan} alt="CVDuncan" className="w-[250px]" />
-            <a href={resume} download>
+            <a href={resume} download="Abhishek.pdf">
               <button className="md:hero-animation1 bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-[21px]">
                 Download CV
               </button>
