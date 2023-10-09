@@ -291,3 +291,29 @@
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 } */
+
+
+.backToTop{
+  font-family: inherit;
+  border: none;
+  outline-offset: -4px;
+background: linear-gradient(to top, rgba(195, 0, 255, 0.434),rgba(255, 0, 179, 0.314));
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.1s linear;
+}
+.backToTop:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 15px 3px rgba(22, 54, 122, 0.307);
+}
