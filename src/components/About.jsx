@@ -48,13 +48,13 @@ const About = () => {
 
 
       <motion.div variants={textVariant()}>
-        <div className='flex justify-between'>
+        <div className='flex justify-between '>
           <div>
             <p className={styles.sectionSubText}>Introduction</p>
             <h2 className={styles.sectionHeadText}>Overview.</h2>
           </div >
           <div className='  flex items-center flex-wrap'>
-            <img src={CVDuncan} alt="CVDuncan" className="w-[250px]" />
+            <img src={CVDuncan} alt="CVDuncan" className="w-[250px] " />
             <a href={resume} download="Abhishek.pdf">
               <button className="md:hero-animation1 bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-[21px]">
                 Download CV
@@ -70,7 +70,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className=' mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className=' font-bold mt-4 text-white text-[17px] max-w-3xl leading-[30px]'
       >
         An enthusiastic and motivated Student in  the field of Computer Science
         with a keen interest  in Full Stack Development. I love to build software
