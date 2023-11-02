@@ -3,7 +3,7 @@ import React from 'react'
 
 const Tweets = () => {
   return (
-    <div>
+    <div className='bg-white'>
       
       
       {/* <iframe
