@@ -118,8 +118,15 @@ import resume from "/src/Abhishek.pdf";
 import { Tilt } from 'react-tilt'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import {  Link } from "react-router-dom";
 
 import { styles } from "../styles"
+
+import { BsTwitter } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { BsDiscord } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -205,9 +212,9 @@ const Hero = () => {
             <p>Scroll Down</p>
             
           </a>
-
           
          </div>
+
          {/* <div className="mt-5 flex place-content-center md:block ">
               <div className="relative inline-flex group justify-center ">
                 <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt "></div>
@@ -223,6 +230,39 @@ const Hero = () => {
                
               </div>
             </div> */}
+
+
+            <div className="md:flex sm:text-[20px] flex justify-center gap-12 items-center mt-10 ">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/abhishek-yadav17/"
+            >
+              {" "}
+              <BsLinkedin className="mr-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mr-0 -md:my-[1px]" />
+            </Link>
+
+            <Link
+              target="_blank"
+              to="https://github.com/Abhishek9503"
+            >
+            <BsGithub className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
+            </Link>
+              
+
+            <Link target="_blank" to="https://twitter.com/Abhishe9503">
+              <BsTwitter className="ml-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:ml-0 -md:my-[1px]  " />
+            </Link>
+            <Link target="_blank" to="https://discord.com/channels/@me">
+              <BsDiscord className="mx-4 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
+            </Link>
+
+            <Link
+              target="_blank"
+              to="https://www.instagram.com/abhishek__yadav17_/"
+            >
+              <BsInstagram className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
+            </Link>
+          </div>
 
         </div>
 
