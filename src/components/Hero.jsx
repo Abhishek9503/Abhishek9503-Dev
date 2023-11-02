@@ -232,7 +232,7 @@ const Hero = () => {
             </div> */}
 
 
-            <div className="md:flex sm:text-[20px] flex justify-center gap-12 items-center mt-10 ">
+            <div className="text-[25px] md:text-[35px] flex justify-center gap-12 items-center mt-10 ">
             <Link
               target="_blank"
               to="https://www.linkedin.com/in/abhishek-yadav17/"
