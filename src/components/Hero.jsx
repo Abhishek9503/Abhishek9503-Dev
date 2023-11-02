@@ -114,6 +114,10 @@
 
 import React from "react"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
+import resume from "/src/Abhishek.pdf";
+import { Tilt } from 'react-tilt'
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 import { styles } from "../styles"
 
@@ -121,7 +125,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className=''
     >
       <div
         options={{
@@ -131,10 +135,10 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className='w-full'
       >
-      
-       <div className="flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card"></div>
+  <div className="flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card">
 
-       <div className="bg-avatar bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform" />
+<div className="bg-avatar bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform" />
+</div>
        
       </div>
     </motion.div>
@@ -160,7 +164,7 @@ const Hero = () => {
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-5 pt-10`}>
+        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-20 pt-10`}>
         <div>
           <div className="flex gap-3 select-none">
             <div className="flex flex-col justify-center items-center mt-5">
@@ -184,6 +188,13 @@ const Hero = () => {
             </div>
           </div>
 
+         <div className="flex">
+         {/* <a
+          href={resume} download="Abhishek.pdf"
+            className="w-fit mx-auto flex items-center justify-center bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none ">
+            <p className="text-[40px] animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  ">Resume</p>
+          </a> */}
+          
           <a
             href="#about"
             className="w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none">
@@ -192,14 +203,33 @@ const Hero = () => {
             </div>
 
             <p>Scroll Down</p>
+            
           </a>
+
+          
+         </div>
+         {/* <div className="mt-5 flex place-content-center md:block ">
+              <div className="relative inline-flex group justify-center ">
+                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt "></div>
+                    <p className="w-fit mx-auto flex items-center justify-center bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl  cursor-pointer max-[350px]:hidden select-none transitiona-all duration-1000 opacity-70 -inset-px">Resume</p>
+                  
+               
+              </div>
+
+              <div className="relative inline-flex group gap-10">
+                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt "></div>
+                    <p className="w-fit mx-auto flex items-center justify-center bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl mt-2 cursor-pointer max-[350px]:hidden select-none transitiona-all duration-1000 opacity-70 -inset-px">Resume</p>
+                  
+               
+              </div>
+            </div> */}
+
         </div>
 
         <div className="w-full">
-          <div className="flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card">
-            <div className="bg-avatar bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform" />
-          </div>
+        <ServiceCard />
         </div>
+        
         
       </div>
     </section>
