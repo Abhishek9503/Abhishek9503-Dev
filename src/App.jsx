@@ -87,7 +87,7 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
+  // Works,
   StarsCanvas,
 } from "./components";
 import Tweets from "./pages/Tweets";
@@ -96,9 +96,18 @@ import Footer from "./components/Footer";
 import { BsArrowUp } from "react-icons/bs";
 import Project from "./pages/Project";
 import Playground from "./pages/Playground";
+
+import MouseFollower from "mouse-follower";
+import gsap from "gsap";
+
 const App = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   // const { appRef } = useAnimeContext();
+
+
+MouseFollower.registerGSAP(gsap);
+
+// const cursor = new MouseFollower();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -141,7 +150,7 @@ const App = () => {
                 <About />
                 <Experience />
                 <Tech />
-                <Works />
+                {/* <Works /> */}
                 <Feedbacks />
                 <div className="relative z-0">
                   <Contact />

@@ -10,7 +10,7 @@ import { Router } from "react-router-dom";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const {linkRef} = useRef(null)
+  const { linkRef } = useRef(null);
   return (
     <nav
       className={` ${styles.paddingX}  w-full flex items-center py-2 fixed top-0 z-20 backdrop-blur-md`}
@@ -34,17 +34,16 @@ const Navbar = () => {
             className="text-white text-[18px]  mt-4 
         font-bold cursor-pointer flex"
           >
-            Abhishek Yadav &nbsp;{" "}
-            <span className="sm:block hidden"> | Web Developer</span>
+            Full Stack Developer&nbsp; <span className="sm:block hidden"></span>
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row items-center gap-10">
           <a href={resume} download="Abhishek.pdf">
             <button
               className={`${
                 active === Link.title ? "  text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              }  text-[18px] font-medium cursor-pointer btn-11`}
               onClick={() => setActive(Link.title)}
             >
               <span className="flex items-center">
@@ -61,31 +60,31 @@ const Navbar = () => {
             </button>
           </a>
 
-          <Link 
-      ref={linkRef}
-      to="/project"
-      onClick={() => {
+          <Link
+            ref={linkRef}
+            to="/project"
+            onClick={() => {
               window.scrollTo(0, 0);
-      }}
-   
-      className={`${
-                active === Link.title ? "  text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}>
-      Projects
-      </Link>
+            }}
+            className={`${
+              active === Link.title ? "  text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Projects
+          </Link>
 
-      <Link 
-      ref={linkRef}
-      to="/play"
-      onClick={() => {
+          <Link
+            ref={linkRef}
+            to="/play"
+            onClick={() => {
               window.scrollTo(0, 0);
-      }}
-     
-      className={`${
-                active === Link.title ? "  text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}>
-      Playground
-      </Link>
+            }}
+            className={`${
+              active === Link.title ? "  text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Playground
+          </Link>
 
           {navLinks.map((Link) => (
             <li

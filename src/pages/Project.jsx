@@ -97,10 +97,11 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      {/* <motion.div variants={textVariant()}> */}
-        <p className={`${styles.sectionSubText} `}>My work</p>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} mt-10`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      {/* </motion.div> */}
+      </motion.div>
+      
 
       <div className='w-full flex'>
         {/* <motion.p
@@ -115,7 +116,7 @@ const Works = () => {
         {/* </motion.p> */}
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7 '>
+      <div className='mt-20 flex flex-wrap gap-7 justify-center'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

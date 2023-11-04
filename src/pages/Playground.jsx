@@ -7,7 +7,7 @@ const Playground = () => {
 
   useEffect(() => {
     setTimeout(() => {
-        setIsLoading(false)
+      setIsLoading(false);
     }, 6000);
   }, []);
 
@@ -17,7 +17,8 @@ const Playground = () => {
         <Spinner />
       ) : (
         <div className="w-full">
-        <Spline scene="https://prod.spline.design/CXC90oesn2aWwg4o/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/CXC90oesn2aWwg4o/scene.splinecode" />
+          {/* <Spline scene="https://my.spline.design/pushittothelimit-10b2fd6a183cef2b8f68945252f50553/" /> */}
         </div>
       )}
     </div>
