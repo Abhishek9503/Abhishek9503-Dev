@@ -98,18 +98,21 @@ const Navbar = () => {
             </li>
           ))}
 
-          <a href="https://abhishek-bio.onrender.com/" target="_blank">
-            <button
-              className={`${
-                active === Link.title ? "  text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(Link.title)}
-            >
-              <span className="flex items-center"> Socials</span>
-            </button>
-          </a>
+              
+          <Link
+            ref={linkRef}
+            to="/blogs"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className={`${
+              active === Link.title ? "  text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Blogs
+          </Link>
 
-          <a href="https://hashnode.com/@Abhishek9503" target="_blank">
+          {/* <a href="https://hashnode.com/@Abhishek9503" target="_blank">
             <button
               className={`${
                 active === Link.title ? "  text-white" : "text-secondary"
@@ -118,7 +121,21 @@ const Navbar = () => {
             >
               <span className="flex items-center"> Blogs</span>
             </button>
-          </a>
+          </a> */}
+
+          {/* <a href="https://abhishek-bio.onrender.com/" target="_blank">
+            <button
+              className={`${
+                active === Link.title ? "  text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(Link.title)}
+            >
+              <span className="flex items-center"> Socials</span>
+            </button>
+          </a> */}
+
+      
+
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">

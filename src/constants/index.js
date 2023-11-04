@@ -33,10 +33,10 @@ import {
 export const CVDuncan = CV_Duncan
 
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
+  // {
+  //   id: "about",
+  //   title: "About",
+  // },
   {
     id: "work",
     title: "Work",

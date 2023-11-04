@@ -90,7 +90,7 @@ import {
   // Works,
   StarsCanvas,
 } from "./components";
-import Tweets from "./pages/Tweets";
+import Tweets from "./pages/Blogs";
 import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import { BsArrowUp } from "react-icons/bs";
@@ -99,6 +99,7 @@ import Playground from "./pages/Playground";
 
 import MouseFollower from "mouse-follower";
 import gsap from "gsap";
+import Blogs from "./pages/Blogs";
 
 const App = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -168,6 +169,7 @@ MouseFollower.registerGSAP(gsap);
         )} />
 
         <Route exact path="/play" element={<Playground />} />
+        <Route exact path="/blogs" element={<Blogs />} />
         
       </Routes>
 </BrowserRouter>
