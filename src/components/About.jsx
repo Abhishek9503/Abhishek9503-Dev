@@ -17,7 +17,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full transition-all'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className='shadow w-[95%] green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
         options={{
@@ -48,7 +48,7 @@ const About = () => {
 
 
       <motion.div variants={textVariant()}>
-        <div className='flex justify-between '>
+        <div className=' flex justify-between '>
           <div>
             <p className={styles.sectionSubText}>Introduction</p>
             <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -85,7 +85,7 @@ const About = () => {
 
 
 
-      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
+      <div className=' mt-20 flex flex-wrap gap-10 justify-center'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

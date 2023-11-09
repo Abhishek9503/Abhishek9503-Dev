@@ -66,6 +66,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
         avatar: "url(/src/assets/ab.png)",
+        // avatar: "#100d25",
       },
     },
   },

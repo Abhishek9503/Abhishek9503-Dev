@@ -39,7 +39,7 @@ const TechCard = ({ index, icon }) => {
     <Tilt className="w-28 h-28">
       <div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-full shadow-card select-none">
+        className=" w-full green-pink-gradient p-[1px] rounded-full shadow-card select-none">
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
           className="bg-tertiary rounded-full py-5 flex justify-evenly items-center flex-col">
