@@ -175,7 +175,7 @@ MouseFollower.registerGSAP(gsap);
 </BrowserRouter>
       {showBackToTop && (
         <button
-          className="fixed bottom-4 right-4 p-2 shadow cursor-pointer backToTop"
+          className="fixed bottom-4 right-4 p-2  cursor-pointer backToTop"
           onClick={handleBackToTop}
         >
           <BsArrowUp />
