@@ -163,7 +163,7 @@ MouseFollower.registerGSAP(gsap);
           }
         />
         <Route exact path="/project" element={(
-           <div className="proj_page">
+           <div className="proj_page bg-black">
             <Project />
           </div>
         )} />

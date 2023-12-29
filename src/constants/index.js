@@ -21,16 +21,26 @@ import {
   shopify,
   studynotion,
   carrent,
-  jobit,
   tripguide,
   shoppingcart,
   threejs,
   blender,
   image11,
   kavach,
-  CV_Duncan
+  CV_Duncan,
+  studynotion1,
+  evovleUx,
+  nexuvents,
+  pinterest,
+  portfolio,
+  bioPage,
+githubFetch,
+cuberto,
+twoGood,
+shareModal,
+coming
 } from "../assets";
-export const CVDuncan = CV_Duncan
+export const CVDuncan = CV_Duncan;
 
 export const navLinks = [
   // {
@@ -49,7 +59,6 @@ export const navLinks = [
 ];
 
 const services = [
-
   {
     title: "Web Developer ",
     icon: mobile,
@@ -64,7 +73,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "ML-Enthusiast" ,
+    title: "ML-Enthusiast",
     icon: creator,
   },
 ];
@@ -190,36 +199,38 @@ const experiences = [
       "Explored additional resources to expand knowledge beyond the course curriculum, staying up-to-date with emerging trends in C++ programming.",
     ],
   },
-  
 ];
 
 const testimonials = [
   {
-    project:"Kavch Hackathon",
-    testimonial:kavach,
+    project: "Kavch Hackathon",
+    testimonial: kavach,
     name: "Suraksha Sanket",
     designation: "Advanced CCTV analytics solution",
-    company: " Suraksha-Sanket is a web application created to detect Crimes, Infiltration and Unauthorized access. A video analytics software that will use the Machine Learning Algorithms to detect criminal activities during live streaming of video cameras. ",
+    company:
+      " Suraksha-Sanket is a web application created to detect Crimes, Infiltration and Unauthorized access. A video analytics software that will use the Machine Learning Algorithms to detect criminal activities during live streaming of video cameras. ",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
     source_code_link: "https://github.com/Abhishek9503",
   },
-  
+
   {
-    project:"Mega Project",
-    testimonial:studynotion,
-    name:"Study Notion",
+    project: "Mega Project",
+    testimonial: studynotion,
+    name: "Study Notion",
     designation: "Study Notion",
-    company: "Made through MERN stack, revolutionizes education with seamless connectivity and immersive learning experiences. Embrace the future of education as we redefine knowledge acquisition and empower learners worldwide.",
+    company:
+      "Made through MERN stack, revolutionizes education with seamless connectivity and immersive learning experiences. Embrace the future of education as we redefine knowledge acquisition and empower learners worldwide.",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
     source_code_link: "https://github.com/Abhishek9503",
   },
-  
+
   {
-    project:"3d Learning",
-    testimonial:image11,
+    project: "3d Learning",
+    testimonial: image11,
     name: "Blender Projects ",
     designation: "Udemy",
-    company: "In the coming months, I will embark on an enriching journey to enhance my skills in 3D graphics and animation through the Udemy course on Blender. I will delve into the intricacies of modeling, texturing, lighting, rigging, animation, and visual effects, gaining a profound understanding of each aspect.",
+    company:
+      "In the coming months, I will embark on an enriching journey to enhance my skills in 3D graphics and animation through the Udemy course on Blender. I will delve into the intricacies of modeling, texturing, lighting, rigging, animation, and visual effects, gaining a profound understanding of each aspect.",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
     source_code_link: "https://github.com/Abhishek9503",
   },
@@ -227,7 +238,118 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Placement Analyser",
+    name: "NexuVents",
+    description:
+      "NexuVents is a full-stack platform for managing events. It serves as a hub, spotlighting diverse events taking place globally.",
+    tags: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mongodb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nexuvents,
+    image2: "https://nexu-vents.vercel.app/",
+    source_code_link: "https://github.com/Abhishek9503/NexuVents",
+  },
+  {
+    name: "Study Notion",
+    description:
+      "Full Stack Edtech Platform built using React and Redux functionality in fronted and Express and Mongodb in Backend",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: studynotion1,
+    image2: "https://study-notion1-ruddy.vercel.app/",
+    source_code_link: "https://github.com/Abhishek9503/Study-Notion",
+  },
+  {
+    name: "EvolveUx",
+    description:
+      "Travelling and camping fronted website build using Nextjs and Typescript",
+    tags: [
+      {
+        name: "Nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: evovleUx,
+    image2: "https://evolve-travelling.vercel.app/",
+    source_code_link:
+      "https://github.com/Abhishek9503/EvolveUx-Traveling-Camping-Website",
+  },
+  {
+    name: "Pinterest Clone",
+    description: "Pinterest Clone build using EJS and Multer funtionality",
+    tags: [
+      {
+        name: "Express.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mongodb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pinterest,
+    image2: "https://github.com/Abhishek9503/Pinterest",
+    source_code_link: "https://github.com/Abhishek9503/Pinterest",
+  },
+  {
+    name: "My Portfolio",
+    description:
+      " My portfolio, built with React and Three.js, showcases my work using , interactive experiences, and seamless navigation. It incorporates 3D graphics and animations, ensuring a visually engaging and responsive presentation across devices. It highlights my skills, achievements, and creativity in a dynamic and immersive manner.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "three.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    image2: "https://abhishek-portfolio-ivory.vercel.app/",
+    source_code_link: "https://github.com/Abhishek9503/My-ProtFolio",
+  },
+
+  {
+    name: "TwoGood Clone",
     description:
       "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
     tags: [
@@ -253,34 +375,200 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    image2:"https://placementanalyzer.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/ecell_nitb_hack2k23_Cyber_knights",
-  
-    
+    image: twoGood,
+    image2: "https://twogood-clone.onrender.com/",
+    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
   },
   {
-    name: "My Portfolio",
+    name: "Cuberto Clone",
     description:
-      " My portfolio, built with React and Three.js, showcases my work using , interactive experiences, and seamless navigation. It incorporates 3D graphics and animations, ensuring a visually engaging and responsive presentation across devices. It highlights my skills, achievements, and creativity in a dynamic and immersive manner.",
+      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
     tags: [
       {
-        name: "react",
+        name: "Html",
         color: "blue-text-gradient",
       },
       {
-        name: "three.js",
-        color: "green-text-gradient",
+        name: "CSS",
+        color: "pink-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "JS",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    image2:"https://portfolio-6hvt.onrender.com/",
-    source_code_link: "https://github.com/",
+    image: cuberto,
+    image2: "https://twogood-clone.onrender.com/",
+    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
   },
+  {
+    name: "Bio Page",
+    description:
+      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: bioPage,
+    image2: "https://abhishek-bio.onrender.com/",
+    source_code_link: "https://github.com/Abhishek9503/Abhishek-Bio",
+  },
+  {
+    name: "Share Modal",
+    description:
+      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: shareModal,
+    image2: "https://github.com/Abhishek9503/",
+    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
+  },
+
+  {
+    name: "Dice Game",
+    description:
+      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: coming,
+    image2: "https://github.com/Abhishek9503/",
+    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
+  },
+  {
+    name: "Food App",
+    description:
+      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: coming,
+    image2: "https://github.com/Abhishek9503/",
+    source_code_link: "https://github.com/Abhishek9503/",
+  },
+
+
+  {
+    name: "Github Profile",
+    description:
+      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: githubFetch,
+    image2: "https://twogood-clone.onrender.com/",
+    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
+  },
+
   {
     name: "Password Generator",
     description:
@@ -300,7 +588,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    image2:"https://password-generator-abhishek9503.onrender.com/",
+    image2: "https://password-generator-abhishek9503.onrender.com/",
     source_code_link: "https://github.com/Abhishek9503/Password-Generator",
   },
   {
@@ -322,7 +610,7 @@ const projects = [
       },
     ],
     image: studynotion,
-    image2:"https://study-notion.netlify.app",
+    image2: "https://study-notion.netlify.app",
     source_code_link: "https://github.com/Abhishek9503",
   },
 
@@ -345,11 +633,9 @@ const projects = [
       },
     ],
     image: shoppingcart,
-    image2:"https://shopping-cart-abhishek9503.netlify.app/",
+    image2: "https://shopping-cart-abhishek9503.netlify.app/",
     source_code_link: "https://github.com/Abhishek9503",
   },
-
- 
 ];
 
 export { services, technologies, experiences, testimonials, projects };

@@ -1,27 +1,25 @@
-
-
-import React from "react"
-import { Cursor, useTypewriter } from "react-simple-typewriter"
+import React from "react";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import resume from "/src/Abhishek.pdf";
-import { Tilt } from 'react-tilt'
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import { styles } from "../styles"
+import { styles } from "../styles";
 
 import { BsTwitter } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsDiscord } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
-import Skeleton from 'react-loading-skeleton'
+import Skeleton from "react-loading-skeleton";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className=''
+      className=""
     >
       <div
         options={{
@@ -29,22 +27,15 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='w-full'
+        className="w-full"
       >
-  <div className="flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card   ">
-
-<div className="bg-avatar bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform " />
-</div>
-
-
-       
+        <div className="flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card   ">
+          <div className="bg-avatar bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform " />
+        </div>
       </div>
     </motion.div>
   </Tilt>
 );
-
-
-
 
 const Hero = () => {
   const [text, count] = useTypewriter({
@@ -57,12 +48,13 @@ const Hero = () => {
     ],
     loop: true,
     delaySpeed: 2000,
-  })
+  });
 
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-20 pt-20`}>
+        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-20 pt-20`}
+      >
         <div>
           <div className="flex gap-3 select-none">
             <div className="flex flex-col justify-center items-center mt-5">
@@ -79,51 +71,34 @@ const Hero = () => {
               </h1>
 
               <p
-                className={`${styles.heroSubText} mt-2 text-white-100 max-w-lg`}>
+                className={`${styles.heroSubText} mt-2 text-white-100 max-w-lg`}
+              >
                 {text}
                 <Cursor cursorColor="#915eff" />
               </p>
             </div>
           </div>
 
-         <div className="flex">
-         {/* <a
+          <div className="flex">
+            {/* <a
           href={resume} download="Abhishek.pdf"
             className="w-fit mx-auto flex items-center justify-center bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none ">
             <p className="text-[40px] animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  ">Resume</p>
           </a> */}
-          
-          <a
-            href="#about"
-            className="w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none">
-            <div className="group border-[3px] border-white rounded-full h-12 w-7 flex justify-center lg:scale-100 scale-75">
-              <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
-            </div>
 
-            <p>Scroll Down</p>
-            
-          </a>
-          
-         </div>
-
-         {/* <div className="mt-5 flex place-content-center md:block ">
-              <div className="relative inline-flex group justify-center ">
-                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt "></div>
-                    <p className="w-fit mx-auto flex items-center justify-center bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl  cursor-pointer max-[350px]:hidden select-none transitiona-all duration-1000 opacity-70 -inset-px">Resume</p>
-                  
-               
+            <a
+              href="#about"
+              className="w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none"
+            >
+              <div className="group border-[3px] border-white rounded-full h-12 w-7 flex justify-center lg:scale-100 scale-75">
+                <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
               </div>
 
-              <div className="relative inline-flex group gap-10">
-                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt "></div>
-                    <p className="w-fit mx-auto flex items-center justify-center bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl mt-2 cursor-pointer max-[350px]:hidden select-none transitiona-all duration-1000 opacity-70 -inset-px">Resume</p>
-                  
-               
-              </div>
-            </div> */}
+              <p>Scroll Down</p>
+            </a>
+          </div>
 
-
-            <div className="text-[20px] md:text-[35px] flex justify-center gap-12 items-center mt-10 ">
+          <div className="text-[20px] md:text-[35px] flex justify-center gap-12 items-center mt-10 ">
             <Link
               target="_blank"
               to="https://www.linkedin.com/in/abhishek-yadav17/"
@@ -132,13 +107,9 @@ const Hero = () => {
               <BsLinkedin className="mr-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mr-0 -md:my-[1px]" />
             </Link>
 
-            <Link
-              target="_blank"
-              to="https://github.com/Abhishek9503"
-            >
-            <BsGithub className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
+            <Link target="_blank" to="https://github.com/Abhishek9503">
+              <BsGithub className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
             </Link>
-              
 
             <Link target="_blank" to="https://twitter.com/Abhishe9503">
               <BsTwitter className="ml-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:ml-0 -md:my-[1px]  " />
@@ -154,17 +125,14 @@ const Hero = () => {
               <BsInstagram className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
             </Link>
           </div>
-
         </div>
 
         <div className="w-full">
-        <ServiceCard />
+          <ServiceCard />
         </div>
-        
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

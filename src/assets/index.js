@@ -29,13 +29,23 @@ import shopify from "./company/shopify.webp";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import shoppingcart from "./shoppingcart.png";
-import studynotion from "./studynotion.png";
-import image11 from "./image11.png";
-import kavach from "./kavach.png";
+import carrent from "./project/carrent.png";
+import tripguide from "./project/tripguide.png";
+import shoppingcart from "./project/shoppingcart.png";
+import studynotion from "./project/studynotion.png";
+import image11 from "./project/image11.png";
+import kavach from "./project/kavach.png";
+import studynotion1 from "./project/studynotion1.png"
+import nexuvents from "./project/nexuvents.png"
+import evovleUx from "./project/evovleUx.png"
+import pinterest from "./project/pinterest.png"
+import portfolio from "./project/portfolio.png"
+import shareModal from "./project/shareModal.png"
+import githubFetch from "./project/githubFetch.png"
+import bioPage from "./project/bioPage.png"
+import cuberto from "./project/cuberto.png"
+import twoGood from "./project/twoGood.png"
+import coming from "./project/coming.jpeg"
 
 
 export {
@@ -66,11 +76,21 @@ export {
   starbucks,
   tesla,
   carrent,
-  jobit,
-  tripguide,
+    tripguide,
   blender,
   shoppingcart,
   studynotion,
   image11,
   kavach,
+  studynotion1,
+evovleUx,
+nexuvents,
+pinterest,
+portfolio,
+shareModal,
+bioPage,
+githubFetch,
+cuberto,
+twoGood,
+coming
 };
