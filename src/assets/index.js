@@ -47,6 +47,7 @@ import cuberto from "./project/cuberto.png"
 import twoGood from "./project/twoGood.png"
 import coming from "./project/coming.jpeg"
 import holophin from "./holophin.png"
+import gitmap from "./gitmap.png"
 
 export {
   logo,
@@ -93,5 +94,6 @@ githubFetch,
 cuberto,
 twoGood,
 coming,
-holophin
+holophin,
+gitmap
 };

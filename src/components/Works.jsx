@@ -2,6 +2,7 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { holophin } from "../assets";
+import { gitmap } from "../assets";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -38,10 +39,10 @@ const Works = () => {
 
         {/* <div variants={textVariant()}> */}
       </div>
-      <div className="w-full flex">
+      {/* <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-1 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -49,9 +50,9 @@ const Works = () => {
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
         </motion.p>
-      </div>
+      </div> */}
 
-      <div className="mt-20 flex flex-wrap gap-20">
+      <div className="mt-10 flex flex-wrap gap-20">
 
       <Tilt transition-all >
           <a href="https://app.daily.dev/Abhishek9503">
@@ -74,21 +75,21 @@ const Works = () => {
             src="https://github-readme-streak-stats.herokuapp.com/?user=Abhishek9503&theme=tokyonight"
           />
 
-          <p >
-            {" "}
-            <img
-              src="https://komarev.com/ghpvc/?username=abhishek9503&label=Profile%20views&color=0e75b6&style=flat"
-              alt="abhishek9503"
-            />{" "}
-          </p>
+          
+          <img src={gitmap} width={500} alt="" />
+       
 
-          <a href="https://ko-fi.com/abhishek9503#paypalModal" target="_blank " className="flex justify-start mt-5">
+
+          <a href="https://ko-fi.com/abhishek9503#paypalModal" target="_blank " className=" flex justify-start items-center gap-12 mt-5">
             <img
               height="36"
               className="border-0px h-[36px] "
               src="https://cdn.ko-fi.com/cdn/kofi4.png?v=2"
               alt="Buy Me a Coffee at ko-fi.com"
             />
+  
+           <span className="abhishek-btn">⭐⭐Give my Repo some stars⭐⭐</span>
+      
           </a>
         </div>
 

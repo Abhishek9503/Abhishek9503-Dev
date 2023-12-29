@@ -759,7 +759,7 @@ backdrop-filter: blur(11px);
 
 
 .neon {
-  font-family: neon;
+  /* font-family: neon; */
   color: #FB4264;
   font-size: 9vw;
   line-height: 9vw;
@@ -767,7 +767,7 @@ backdrop-filter: blur(11px);
 }
 
 .flux {
-  font-family: neon;
+  /* font-family: neon; */
   color: #426DFB;
   font-size: 9vw;
   line-height: 9vw;
