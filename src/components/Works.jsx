@@ -1,3 +1,105 @@
+import React from "react";
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import { holophin } from "../assets";
+import { styles } from "../styles";
+import { github } from "../assets";
+import { SectionWrapper } from "../hoc";
+import { projects } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
+import { AiOutlineArrowRight } from "react-icons/ai";
+
+const Works = () => {
+  return (
+    <>
+      <div className="flex justify-between mr-10">
+        <motion.div variants={textVariant()}>
+          <div>
+            {/* <p className={`${styles.sectionSubText} mt-10`}>My work</p> */}
+            <h2 className={`${styles.sectionHeadText} flux`}>Github Stats</h2>
+          </div>
+        </motion.div>
+
+        <div
+          className="flex justify-between "
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
+          <a
+            href="https://github.com/Abhishek9503 "
+            target="_blank"
+            className={`${styles.sectionSubText} flex items-center`}
+          >
+            View More <AiOutlineArrowRight />
+          </a>
+        </div>
+
+        {/* <div variants={textVariant()}> */}
+      </div>
+      <div className="w-full flex">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          Following projects showcases my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to code repositories and live demos in it. It reflects my
+          ability to solve complex problems, work with different technologies,
+          and manage projects effectively.
+        </motion.p>
+      </div>
+
+      <div className="mt-20 flex flex-wrap gap-20">
+
+      <Tilt transition-all >
+          <a href="https://app.daily.dev/Abhishek9503">
+            <img className=""
+              src="https://api.daily.dev/devcards/612db3c2a6bb4916824419a215f49bcd.png?r=xmo"
+              width="400"
+              alt="Abhishek Yadav's Dev Card"
+            />
+          </a>
+        
+        </Tilt >
+
+        <div className="abhishek">
+          <img
+            width="100%"
+            src="https://github-readme-stats.vercel.app/api?username=Abhishek9503&show_icons=true&theme=tokyonight"
+          />
+          <img
+            width="100%"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=Abhishek9503&theme=tokyonight"
+          />
+
+          <p >
+            {" "}
+            <img
+              src="https://komarev.com/ghpvc/?username=abhishek9503&label=Profile%20views&color=0e75b6&style=flat"
+              alt="abhishek9503"
+            />{" "}
+          </p>
+
+          <a href="https://ko-fi.com/abhishek9503#paypalModal" target="_blank " className="flex justify-start mt-5">
+            <img
+              height="36"
+              className="border-0px h-[36px] "
+              src="https://cdn.ko-fi.com/cdn/kofi4.png?v=2"
+              alt="Buy Me a Coffee at ko-fi.com"
+            />
+          </a>
+        </div>
+
+        <img className="mt-1" src={holophin} alt="holphin" />
+      </div>
+    </>
+  );
+};
+
+export default SectionWrapper(Works, "");
+
 // import React from "react";
 // import {Tilt} from "react-tilt";
 // import { motion } from "framer-motion";
@@ -136,15 +238,3 @@
 // };
 
 // export default SectionWrapper(Works, "");
-
-// import React from 'react'
-
-// const Works = () => {
-//   return (
-//     <div>
-
-//     </div>
-//   )
-// }
-
-// export default Works

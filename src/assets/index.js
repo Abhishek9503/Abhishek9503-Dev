@@ -46,7 +46,7 @@ import bioPage from "./project/bioPage.png"
 import cuberto from "./project/cuberto.png"
 import twoGood from "./project/twoGood.png"
 import coming from "./project/coming.jpeg"
-
+import holophin from "./holophin.png"
 
 export {
   logo,
@@ -92,5 +92,6 @@ bioPage,
 githubFetch,
 cuberto,
 twoGood,
-coming
+coming,
+holophin
 };

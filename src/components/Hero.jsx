@@ -29,8 +29,8 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className="w-full"
       >
-        <div className="flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card   ">
-          <div className="bg-avatar bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform " />
+        <div className="abhishek flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card   ">
+          <div className="bg-avatar  bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform " />
         </div>
       </div>
     </motion.div>
@@ -65,7 +65,7 @@ const Hero = () => {
             <div className="lg:w-[32rem]">
               <h1 className={`${styles.heroHeadText} text-white`}>
                 Hi, I'm <br />
-                <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
+                <span className=" animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
                   Abhishek Yadav
                 </span>
               </h1>
@@ -88,23 +88,29 @@ const Hero = () => {
 
             <a
               href="#about"
-              className="w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none"
+              className="  w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none"
             >
-              <div className="group border-[3px] border-white rounded-full h-12 w-7 flex justify-center lg:scale-100 scale-75">
+              <div className=" group border-[3px] border-white rounded-full h-12 w-7 flex justify-center lg:scale-100 scale-75">
                 <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
               </div>
 
-              <p>Scroll Down</p>
+              <p className=" ">
+              {/* <span className="faulty-letter">Down</span><span className=" glowing-txt">Scroll</span>
+              
+               */}
+
+               Scroll Down
+              </p>
             </a>
           </div>
 
-          <div className="text-[20px] md:text-[35px] flex justify-center gap-12 items-center mt-10 ">
+          <div className="text-[20px] md:text-[35px] flex justify-center gap-12 items-center mt-10  ">
             <Link
               target="_blank"
               to="https://www.linkedin.com/in/abhishek-yadav17/"
             >
               {" "}
-              <BsLinkedin className="mr-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mr-0 -md:my-[1px]" />
+              <BsLinkedin className=" text-white mr-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mr-0 -md:my-[1px]" />
             </Link>
 
             <Link target="_blank" to="https://github.com/Abhishek9503">

@@ -87,7 +87,7 @@ import {
   Hero,
   Navbar,
   Tech,
-  // Works,
+  Works,
   StarsCanvas,
 } from "./components";
 import Tweets from "./pages/Blogs";
@@ -143,15 +143,19 @@ MouseFollower.registerGSAP(gsap);
           path="/"
           element={
             <>
-              <div className="relative z-0 bg-black">
-                <div className=" bg-black bg-cover bg-no-repeat bg-center">
+              <div className="relative z-0 bg-primary">
+                <div className=" bg-cover bg-no-repeat bg-center">
                   <Navbar />
+                  <div className="relative z-0">
                   <Hero />
+                  <StarsCanvas />
+                </div>
+                  
                 </div>
                 <About />
                 <Experience />
                 <Tech />
-                {/* <Works /> */}
+                <Works />
                 <Feedbacks />
                 <div className="relative z-0">
                   <Contact />

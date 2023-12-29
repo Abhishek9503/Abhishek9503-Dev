@@ -55,7 +55,7 @@ const Tech = () => {
     <>
       <div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My tools</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`${styles.sectionHeadText} text-center neonText `}>
           Technologies.
         </h2>
       </div>

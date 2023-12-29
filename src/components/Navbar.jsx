@@ -42,8 +42,8 @@ const Navbar = () => {
           <a href={resume} download="Abhishek.pdf">
             <button
               className={`${
-                active === Link.title ? "  text-white" : "text-secondary"
-              }  text-[18px] font-medium cursor-pointer btn-11`}
+                active === Link.title ? "abhishek" : "abhishek-btn"
+              }   font-medium cursor-pointer border-[1px]`}
               onClick={() => setActive(Link.title)}
             >
               <span className="flex items-center">
@@ -57,6 +57,7 @@ const Navbar = () => {
                 </svg>{" "}
                 Download Cv
               </span>
+              
             </button>
           </a>
 

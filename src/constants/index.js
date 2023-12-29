@@ -47,15 +47,15 @@ export const navLinks = [
   //   id: "about",
   //   title: "About",
   // },
-  {
-    id: "work",
-    title: "Work",
-  },
+  // {
+  //   id: "work",
+  //   title: "Work",
+  // },
 
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  // {
+  //   id: "contact",
+  //   title: "Contact",
+  // },
 ];
 
 const services = [
@@ -203,7 +203,7 @@ const experiences = [
 
 const testimonials = [
   {
-    project: "Kavch Hackathon",
+    project: "Full Stack Developer",
     testimonial: kavach,
     name: "Suraksha Sanket",
     designation: "Advanced CCTV analytics solution",
@@ -214,7 +214,7 @@ const testimonials = [
   },
 
   {
-    project: "Mega Project",
+    project: "Data Structure & Algo",
     testimonial: studynotion,
     name: "Study Notion",
     designation: "Study Notion",
