@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import resume from "/src/Abhishek.pdf";
 import { Tilt } from "react-tilt";
@@ -15,10 +15,11 @@ import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import Skeleton from "react-loading-skeleton";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full ">
+const ServiceCard = ({ index, title, icon,reference }) => (
+  <div className="xs:w-[250px] w-full ">
     <motion.div
-    
+    drag dragConstraints{...reference}
+    whileDrag={{scale:1.2}} dragElastic={0.2}
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className=""
     >
@@ -35,10 +36,12 @@ const ServiceCard = ({ index, title, icon }) => (
         </div>
       </div>
     </motion.div>
-  </Tilt>
+  </div>
 );
 
 const Hero = () => {
+  const ref= useRef(null)
+
   const [text, count] = useTypewriter({
     words: [
       "I'm Web Developer",
@@ -127,8 +130,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full mt-10 ">
-          <ServiceCard />
+        <div ref={ref} className="w-full mt-10 ">
+          <ServiceCard reference={ref}/>
         </div>
       </div>
     </section>
