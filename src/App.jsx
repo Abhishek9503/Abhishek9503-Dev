@@ -148,7 +148,7 @@ MouseFollower.registerGSAP(gsap);
                   <Navbar />
                   <div className="relative z-0">
                   <Hero />
-                  <StarsCanvas />
+                  {/* <StarsCanvas /> */}
                 </div>
                   
                 </div>
@@ -167,8 +167,9 @@ MouseFollower.registerGSAP(gsap);
           }
         />
         <Route exact path="/project" element={(
-           <div className="proj_page bg-black">
+           <div className="proj_page relative">
             <Project />
+            <StarsCanvas />
           </div>
         )} />
 
