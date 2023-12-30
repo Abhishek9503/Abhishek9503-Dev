@@ -18,6 +18,7 @@ import Skeleton from "react-loading-skeleton";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full ">
     <motion.div
+    
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className=""
     >
@@ -80,14 +81,8 @@ const Hero = () => {
           </div>
 
           <div className="flex">
-            {/* <a
-          href={resume} download="Abhishek.pdf"
-            className="w-fit mx-auto flex items-center justify-center bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none ">
-            <p className="text-[40px] animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  ">Resume</p>
-          </a> */}
-
             <a
-              href="#about"
+              href="#tech"
               className="  w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none"
             >
               <div className=" group border-[3px] border-white rounded-full md:h-12 h-10 w-7 flex justify-center lg:scale-100 scale-75">
@@ -95,11 +90,10 @@ const Hero = () => {
               </div>
 
               <p className=" ">
-              {/* <span className="faulty-letter">Down</span><span className=" glowing-txt">Scroll</span>
+                {/* <span className="faulty-letter">Down</span><span className=" glowing-txt">Scroll</span>
               
                */}
-
-               Scroll Down
+                Scroll Down
               </p>
             </a>
           </div>

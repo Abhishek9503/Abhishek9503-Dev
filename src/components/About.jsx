@@ -42,16 +42,16 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* <motion.div variants={textVariant()}>
         <div className=" flex justify-between ">
           <div>
             <p className={styles.sectionSubText}>Introduction</p>
             <h2 className={styles.sectionHeadText}>Overview.</h2>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
 
-      <div className="md:flex items-center">
+      {/* <div className="md:flex items-center">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className=" font-bold mt-4 text-white text-[17px] max-w-2xl leading-[30px]"
@@ -73,7 +73,7 @@ const About = () => {
             </button>
           </a>
         </div>
-      </div>
+      </div> */}
 
       <div className=" mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (

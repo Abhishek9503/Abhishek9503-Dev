@@ -55,7 +55,7 @@ const Tech = () => {
     <>
       <div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My tools</p>
-        <h2 className={`${styles.sectionHeadText} text-center neonText `}>
+        <h2 className={`${styles.sectionHeadText} text-center flux `}>
           Technologies.
         </h2>
       </div>
@@ -69,4 +69,5 @@ const Tech = () => {
   )
 }
 
-export default SectionWrapper(Tech, "")
+export default SectionWrapper(Tech, "tech")
+

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { holophin } from "../assets";
@@ -53,17 +54,16 @@ const Works = () => {
       </div> */}
 
       <div className="mt-10 flex flex-wrap gap-20">
-
-      <Tilt transition-all >
+        <Tilt transition-all>
           <a href="https://app.daily.dev/Abhishek9503">
-            <img className=""
+            <img
+              className=""
               src="https://api.daily.dev/devcards/612db3c2a6bb4916824419a215f49bcd.png?r=xmo"
               width="400"
               alt="Abhishek Yadav's Dev Card"
             />
           </a>
-        
-        </Tilt >
+        </Tilt>
 
         <div className="abhishek">
           <img
@@ -75,21 +75,23 @@ const Works = () => {
             src="https://github-readme-streak-stats.herokuapp.com/?user=Abhishek9503&theme=tokyonight"
           />
 
-          
           <img src={gitmap} width={500} alt="" />
-       
 
-
-          <a href="https://ko-fi.com/abhishek9503#paypalModal" target="_blank " className=" flex justify-start items-center gap-12 mt-5">
+          <a
+            href="https://ko-fi.com/abhishek9503#paypalModal"
+            target="_blank "
+            className=" flex justify-start items-center gap-12 mt-5"
+          >
             <img
               height="36"
               className="border-0px h-[36px] "
               src="https://cdn.ko-fi.com/cdn/kofi4.png?v=2"
               alt="Buy Me a Coffee at ko-fi.com"
             />
-  
-           <span className="abhishek-btn">⭐⭐Give my Repo some stars⭐⭐</span>
-      
+
+            <span className="abhishek-btn">
+              ⭐⭐Give my Repo some stars⭐⭐
+            </span>
           </a>
         </div>
 

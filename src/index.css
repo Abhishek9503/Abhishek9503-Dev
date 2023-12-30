@@ -5,7 +5,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -824,3 +826,12 @@ backdrop-filter: blur(11px);
     0 0 100px #bc13fe,
     0 0 120px #af12ed;
 }
+
+
+
+
+
+
+
+
+

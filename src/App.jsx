@@ -152,9 +152,10 @@ MouseFollower.registerGSAP(gsap);
                 </div>
                   
                 </div>
+                <Tech />
                 <About />
                 <Experience />
-                <Tech />
+                
                 <Works />
                 <Feedbacks />
                 <div className="relative z-0">
@@ -167,9 +168,9 @@ MouseFollower.registerGSAP(gsap);
           }
         />
         <Route exact path="/project" element={(
-           <div className="proj_page relative">
+           <div className="proj_page relative bg-tertiary">
             <Project />
-            <StarsCanvas />
+            {/* <StarsCanvas /> */}
           </div>
         )} />
 
