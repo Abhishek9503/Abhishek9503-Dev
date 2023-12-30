@@ -16,7 +16,7 @@ import { BsLinkedin } from "react-icons/bs";
 import Skeleton from "react-loading-skeleton";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt className="xs:w-[250px] w-full ">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className=""
@@ -27,10 +27,10 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="w-full"
+        className="w-full "
       >
-        <div className="abhishek flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card   ">
-          <div className="bg-avatar  bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform " />
+        <div className="abhishek  flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card   ">
+          <div className="bg-avatar   bg-cover bg-no-repeat bg-[50%]  justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform " />
         </div>
       </div>
     </motion.div>
@@ -53,7 +53,7 @@ const Hero = () => {
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-20 pt-20`}
+        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-20  pt-20`}
       >
         <div>
           <div className="flex gap-3 select-none">
@@ -104,7 +104,7 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="text-[20px] md:text-[35px] flex justify-center gap-12 items-center mt-10  ">
+          <div className="text-[20px] md:text-[35px] flex justify-center gap-5  items-center mt-10 md:gap-12 sm:mb-20  ">
             <Link
               target="_blank"
               to="https://www.linkedin.com/in/abhishek-yadav17/"
@@ -133,7 +133,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full">
+        <div className="w-full mt-10 ">
           <ServiceCard />
         </div>
       </div>
