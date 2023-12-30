@@ -53,7 +53,7 @@ const Hero = () => {
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-20  pt-20`}
+        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse  pl-25 md:pl-10 mt-10 sm:justify-center items-start  md:gap-20 gap-5  pt-20`}
       >
         <div>
           <div className="flex gap-3 select-none">
@@ -90,7 +90,7 @@ const Hero = () => {
               href="#about"
               className="  w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none"
             >
-              <div className=" group border-[3px] border-white rounded-full h-12 w-7 flex justify-center lg:scale-100 scale-75">
+              <div className=" group border-[3px] border-white rounded-full md:h-12 h-10 w-7 flex justify-center lg:scale-100 scale-75">
                 <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
               </div>
 
@@ -104,7 +104,7 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="text-[20px] md:text-[35px] flex justify-center gap-5  items-center mt-10 md:gap-12 sm:mb-20  ">
+          <div className="text-[20px] md:text-[35px] flex justify-center gap-5  items-center md:mt-10 mt-5 md:gap-12 sm:mb-20  ">
             <Link
               target="_blank"
               to="https://www.linkedin.com/in/abhishek-yadav17/"
