@@ -5,7 +5,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
-
+import ConfettiExplosion from 'react-confetti-explosion';
 import { styles } from "../styles";
 
 import { BsTwitter } from "react-icons/bs";
@@ -48,7 +48,8 @@ const ServiceCard = ({ index, title, icon,reference }) => (
 );
 
 const Hero = () => {
-  const ref= useRef(null)
+  const ref= useRef(null);
+  const [isExploding, setIsExploding] = React.useState(true);
 
   const [text, count] = useTypewriter({
     words: [
@@ -67,12 +68,18 @@ const Hero = () => {
       <div
         className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse  pl-25 md:pl-10 mt-10 sm:justify-center items-start  md:gap-20 gap-5  pt-20`}
       >
+      <div className="absolute top-52 right-100">
+      {isExploding && <ConfettiExplosion
+             />}
+      </div>
         <div>
           <div className="flex gap-3 select-none">
             <div className="flex flex-col justify-center items-center mt-5">
               <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
               <div className="w-1 sm:h-80 h-40 violet-gradient"></div>
             </div>
+          
+           
 
             <div className="lg:w-[32rem]">
               <h1 className={`${styles.heroHeadText} text-white`}>
