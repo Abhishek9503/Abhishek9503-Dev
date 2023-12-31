@@ -76,6 +76,19 @@ const Navbar = () => {
 
           <Link
             ref={linkRef}
+            to="/Experience"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className={`${
+              active === Link.title ? "  text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Experience
+          </Link>
+
+          <Link
+            ref={linkRef}
             to="/play"
             onClick={() => {
               window.scrollTo(0, 0);
@@ -99,41 +112,6 @@ const Navbar = () => {
             </li>
           ))}
 
-              
-          <Link
-            ref={linkRef}
-            to="/blogs"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-            className={`${
-              active === Link.title ? "  text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
-          >
-            Blogs
-          </Link>
-
-          {/* <a href="https://hashnode.com/@Abhishek9503" target="_blank">
-            <button
-              className={`${
-                active === Link.title ? "  text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(Link.title)}
-            >
-              <span className="flex items-center"> Blogs</span>
-            </button>
-          </a> */}
-
-          {/* <a href="https://abhishek-bio.onrender.com/" target="_blank">
-            <button
-              className={`${
-                active === Link.title ? "  text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(Link.title)}
-            >
-              <span className="flex items-center"> Socials</span>
-            </button>
-          </a> */}
 
       
 
@@ -151,10 +129,11 @@ const Navbar = () => {
           absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex  justfy-end items-start flex-col gap-4">
+
               <a href={resume} download="Abhishek Abhishek.pdf">
                 <button
                   className={`${
-                    active === Link.title ? "  text-white" : "text-secondary"
+                    active === Link.title ? " abhishek" : "abhishek-btn"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
                   onClick={() => setActive(Link.title)}
                 >
@@ -171,6 +150,31 @@ const Navbar = () => {
                   </span>
                 </button>
               </a>
+              <Link
+            ref={linkRef}
+            to="/project"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className={`${
+              active === Link.title ? "  text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Projects
+          </Link>
+
+          <Link
+            ref={linkRef}
+            to="/Experience"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className={`${
+              active === Link.title ? "  text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Experience
+          </Link>
 
               {navLinks.map((Link) => (
                 <li

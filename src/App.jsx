@@ -82,7 +82,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import {
   About,
   Contact,
-  Experience,
   Feedbacks,
   Hero,
   Navbar,
@@ -96,6 +95,7 @@ import Footer from "./components/Footer";
 import { BsArrowUp } from "react-icons/bs";
 import Project from "./pages/Project";
 import Playground from "./pages/Playground";
+import   Experience from "./pages/Experience";
 
 import MouseFollower from "mouse-follower";
 
@@ -172,7 +172,7 @@ const App = () => {
           />
 
           <Route exact path="/play" element={<Playground />} />
-          <Route exact path="/blogs" element={<Blogs />} />
+          <Route exact path="/Experience" element={<Experience />} />
         </Routes>
       </BrowserRouter>
       {showBackToTop && (
