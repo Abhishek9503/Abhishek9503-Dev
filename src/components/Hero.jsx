@@ -1,11 +1,9 @@
 import React, { useRef } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import resume from "/src/Abhishek.pdf";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
-import ConfettiExplosion from 'react-confetti-explosion';
 import { styles } from "../styles";
 
 import { BsTwitter } from "react-icons/bs";
@@ -13,21 +11,20 @@ import { BsGithub } from "react-icons/bs";
 import { BsDiscord } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
-import Skeleton from "react-loading-skeleton";
 
-const ServiceCard = ({ index, title, icon,reference }) => (
-  <div className="xs:w-[250px] w-full ">
+const ServiceCard = ({ index, title, icon, reference }) => (
+  <Tilt className="xs:w-[250px] w-full ">
     <motion.div
-    drag dragConstraints={{
-      left:-200,
-      top:-200,
-      right:100,
-      down:-100
-    }
-      
-    }
-    whileDrag={{scale:1.2, }}
-     dragElastic={0.2}
+      // drag dragConstraints={{
+      //   left:-200,
+      //   top:-200,
+      //   right:100,
+      //   down:-100
+      // }
+
+      // }
+      // whileDrag={{scale:1.2, }}
+      //  dragElastic={0.2}
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className=""
     >
@@ -44,11 +41,11 @@ const ServiceCard = ({ index, title, icon,reference }) => (
         </div>
       </div>
     </motion.div>
-  </div>
+  </Tilt>
 );
 
 const Hero = () => {
-  const ref= useRef(null);
+  const ref = useRef(null);
   const [isExploding, setIsExploding] = React.useState(true);
 
   const [text, count] = useTypewriter({
@@ -60,26 +57,20 @@ const Hero = () => {
       "<ButLovesToCodeMore />",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 1000,
   });
 
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse  pl-25 md:pl-10 mt-10 sm:justify-center items-start  md:gap-20 gap-5  pt-20`}
+        className={`${styles.paddingX} cursor-pointer  h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse  pl-25 md:pl-10 mt-10 sm:justify-center items-start  md:gap-20 gap-5  pt-20`}
       >
-      <div className="absolute top-52 right-100">
-      {isExploding && <ConfettiExplosion
-             />}
-      </div>
         <div>
-          <div className="flex gap-3 select-none">
+          <div className="flex gap-3 ">
             <div className="flex flex-col justify-center items-center mt-5">
               <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
               <div className="w-1 sm:h-80 h-40 violet-gradient"></div>
             </div>
-          
-           
 
             <div className="lg:w-[32rem]">
               <h1 className={`${styles.heroHeadText} text-white`}>
@@ -146,7 +137,7 @@ const Hero = () => {
         </div>
 
         <div ref={ref} className="w-full mt-10 ">
-          <ServiceCard reference={ref}/>
+          <ServiceCard reference={ref} />
         </div>
       </div>
     </section>

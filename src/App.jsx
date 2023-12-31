@@ -98,17 +98,11 @@ import Project from "./pages/Project";
 import Playground from "./pages/Playground";
 
 import MouseFollower from "mouse-follower";
-import gsap from "gsap";
+
 import Blogs from "./pages/Blogs";
 
 const App = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
-  // const { appRef } = useAnimeContext();
-
-
-MouseFollower.registerGSAP(gsap);
-
-// const cursor = new MouseFollower();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -132,53 +126,55 @@ MouseFollower.registerGSAP(gsap);
 
   return (
     <div>
-     <BrowserRouter>
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-        <Navbar />
-        {/* <Hero /> */}
-      </div>
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <>
-              <div className="relative z-0 bg-primary">
-                <div className=" bg-cover bg-no-repeat bg-center">
-                  <Navbar />
-                  <div className="relative z-0">
-                  <Hero />
-                  {/* <StarsCanvas /> */}
-                </div>
-                  
-                </div>
-                <Tech />
-                <About />
-                {/* <Experience /> */}
-                
-                <Works />
-                <Feedbacks />
-                <div className="relative z-0">
-                  <Contact />
-                  <StarsCanvas />
-                </div>
-                <Footer />
-              </div>
-            </>
-          }
-        />
-        <Route exact path="/project" element={(
-           <div className="proj_page relative bg-tertiary">
-            <Project />
-            {/* <StarsCanvas /> */}
-          </div>
-        )} />
+      <BrowserRouter>
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          {/* <Hero /> */}
+        </div>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <>
+                <div className="relative z-0 bg-primary">
+                  <div className=" bg-cover bg-no-repeat bg-center">
+                    <Navbar />
+                    <div className="relative z-0">
+                      <Hero />
+                      <StarsCanvas />
+                    </div>
+                  </div>
+                  <Tech />
+                  <About />
+                  {/* <Experience /> */}
 
-        <Route exact path="/play" element={<Playground />} />
-        <Route exact path="/blogs" element={<Blogs />} />
-        
-      </Routes>
-</BrowserRouter>
+                  <Works />
+                  <Feedbacks />
+                  <div className="relative z-0">
+                    <Contact />
+                    <StarsCanvas />
+                  </div>
+                  <Footer />
+                </div>
+              </>
+            }
+          />
+          <Route
+            exact
+            path="/project"
+            element={
+              <div className="proj_page relative bg-tertiary">
+                <Project />
+                {/* <StarsCanvas /> */}
+              </div>
+            }
+          />
+
+          <Route exact path="/play" element={<Playground />} />
+          <Route exact path="/blogs" element={<Blogs />} />
+        </Routes>
+      </BrowserRouter>
       {showBackToTop && (
         <button
           className="fixed bottom-4 right-4 p-2  cursor-pointer backToTop"
