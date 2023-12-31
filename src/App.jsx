@@ -154,7 +154,7 @@ MouseFollower.registerGSAP(gsap);
                 </div>
                 <Tech />
                 <About />
-                <Experience />
+                {/* <Experience /> */}
                 
                 <Works />
                 <Feedbacks />

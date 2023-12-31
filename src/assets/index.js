@@ -34,7 +34,6 @@ import tripguide from "./project/tripguide.png";
 import shoppingcart from "./project/shoppingcart.png";
 import studynotion from "./project/studynotion.png";
 import image11 from "./project/image11.png";
-import kavach from "./project/kavach.png";
 import studynotion1 from "./project/studynotion1.png"
 import nexuvents from "./project/nexuvents.png"
 import evovleUx from "./project/evovleUx.png"
@@ -48,6 +47,9 @@ import twoGood from "./project/twoGood.png"
 import coming from "./project/coming.jpeg"
 import holophin from "./holophin.png"
 import gitmap from "./gitmap.png"
+
+import webdev from "./certificates/webdev.png";
+import certificate1 from "./certificates/certificate1.png";
 
 export {
   logo,
@@ -82,7 +84,8 @@ export {
   shoppingcart,
   studynotion,
   image11,
-  kavach,
+  webdev,
+  certificate1,
   studynotion1,
 evovleUx,
 nexuvents,

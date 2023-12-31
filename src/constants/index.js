@@ -26,8 +26,7 @@ import {
   threejs,
   blender,
   image11,
-  kavach,
-  CV_Duncan,
+    CV_Duncan,
   studynotion1,
   evovleUx,
   nexuvents,
@@ -38,7 +37,9 @@ githubFetch,
 cuberto,
 twoGood,
 shareModal,
-coming
+coming,
+webdev,
+  certificate1,
 } from "../assets";
 export const CVDuncan = CV_Duncan;
 
@@ -204,7 +205,7 @@ const experiences = [
 const testimonials = [
   {
     project: "Full Stack Developer",
-    testimonial: kavach,
+    testimonial: webdev,
     name: "Suraksha Sanket",
     designation: "Advanced CCTV analytics solution",
     company:
@@ -215,7 +216,7 @@ const testimonials = [
 
   {
     project: "Data Structure & Algo",
-    testimonial: studynotion,
+    testimonial: certificate1,
     name: "Study Notion",
     designation: "Study Notion",
     company:

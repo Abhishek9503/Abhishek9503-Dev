@@ -95,7 +95,7 @@ const Works = () => {
           </a>
         </div>
 
-        <img className="mt-1" src={holophin} alt="holphin" />
+        {/* <img className="mt-1" src={holophin} alt="holphin" /> */}
       </div>
     </>
   );
