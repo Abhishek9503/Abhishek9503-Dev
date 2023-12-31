@@ -18,8 +18,16 @@ import Skeleton from "react-loading-skeleton";
 const ServiceCard = ({ index, title, icon,reference }) => (
   <div className="xs:w-[250px] w-full ">
     <motion.div
-    drag dragConstraints{...reference}
-    whileDrag={{scale:1.2}} dragElastic={0.2}
+    drag dragConstraints={{
+      left:-200,
+      top:-200,
+      right:100,
+      down:-100
+    }
+      
+    }
+    whileDrag={{scale:1.2, }}
+     dragElastic={0.2}
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className=""
     >
