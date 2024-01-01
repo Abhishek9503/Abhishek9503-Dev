@@ -788,10 +788,15 @@ backdrop-filter: blur(11px);
 
 
 
-.hover-Abhishek {
+.Abhishekbg:hover{
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -ms-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out; 
+
+
+  -webkit-box-shadow: 0px 0px 100px 0px rgba(254, 255, 253, 0.862);
+-moz-box-shadow: 0px 0px 100px 0px rgb(255, 255, 255);
+box-shadow: 0px 0px 100px 0px rgb(51, 65, 211)
 }
