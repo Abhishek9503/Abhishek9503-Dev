@@ -98,5 +98,5 @@ cuberto,
 twoGood,
 coming,
 holophin,
-gitmap
+gitmap,
 };
