@@ -164,7 +164,7 @@ const App = () => {
             exact
             path="/project"
             element={
-              <div className="proj_page relative bg-tertiary">
+              <div className="proj_page relative bg-primary ">
                 <Project />
                 {/* <StarsCanvas /> */}
               </div>
@@ -172,7 +172,12 @@ const App = () => {
           />
 
           <Route exact path="/play" element={<Playground />} />
-          <Route exact path="/Experience" element={<Experience />} />
+          <Route exact path="/Experience" element={
+            <div className="bg-primary">
+
+              <Experience />
+            </div>
+          } />
         </Routes>
       </BrowserRouter>
       {showBackToTop && (
