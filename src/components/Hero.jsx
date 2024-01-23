@@ -107,7 +107,7 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="text-[20px] md:text-[35px] flex justify-center gap-5  items-center md:mt-10 mt-5 md:gap-12 sm:mb-20  ">
+          <div className="text-[30px] md:text-[35px] flex justify-center gap-5   items-center md:mt-10 mt-5 md:gap-12 cursor-pointer mb-20  ">
             <Link
               target="_blank"
               to="https://www.linkedin.com/in/abhishek-yadav17/"
