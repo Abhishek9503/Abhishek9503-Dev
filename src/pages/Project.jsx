@@ -159,7 +159,7 @@ const Projects = ({openModal,setOpenModal}) => {
   return (
     <Container id="projects" className='pt-20'>
       <Wrapper>
-        <h2 className={`${styles.sectionHeadText} text-center mb-[-20px] flux`}>Projects</h2>
+        <h2 className={`${styles.sectionHeadText} text-center md:mt-2 sm:mt-10   mb-[-20px] flux`}>Projects</h2>
         <Desc className={`${styles.sectionSubText} text-center  `}>
           I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
         </Desc>
