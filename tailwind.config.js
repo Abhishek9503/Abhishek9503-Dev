@@ -65,9 +65,9 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
-        "avatar": "url(/src/assets/ab.png)",
+        "avatar": "url(/src/assets/ab1.jpg)",
         "abstract":"url('/src/assets/abstract.jpg')",
-        "avatar1":"url('/src/assets/avatar1.png')"
+        "avatar1":"url('/src/assets/ab2.jpg')"
         // avatar: "#100d25",
       },
     },
