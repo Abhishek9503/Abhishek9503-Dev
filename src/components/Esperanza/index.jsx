@@ -8,11 +8,11 @@ const Esperanza = ({theme}) => {
 
   const path1 = "./images/cultural/";
   const images1 = [
-    ["1", "CSS Orientation"],
-    ["2", "CSS Orientation"],
-    ["3", "CSS Orientation"],
-    ["4", "CSS Orientation"],
-    ["5", "CSS Orientation"],
+    ["1", " "],
+    ["2", " "],
+    ["3", " "],
+    ["4", " "],
+    ["5", " "],
   ];
 
   const path2 = "./images/esperanza/";
