@@ -40,6 +40,7 @@ shareModal,
 coming,
 webdev,
   certificate1,
+  fitt
 } from "../assets";
 export const CVDuncan = CV_Duncan;
 
@@ -448,8 +449,8 @@ const testimonials = [
   },
 
   {
-    project: "3d Learning",
-    testimonial: image11,
+    project: "Ai Builder",
+    testimonial: fitt,
     name: "Blender Projects ",
     designation: "Udemy",
     company:

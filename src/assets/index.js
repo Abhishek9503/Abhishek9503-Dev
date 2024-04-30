@@ -50,6 +50,7 @@ import gitmap from "./gitmap.png"
 
 import webdev from "./certificates/webdev.png";
 import certificate1 from "./certificates/certificate1.png";
+import fitt from "./certificates/fitt.png";
 
 export {
   logo,
@@ -86,6 +87,7 @@ export {
   image11,
   webdev,
   certificate1,
+  fitt,
   studynotion1,
 evovleUx,
 nexuvents,
