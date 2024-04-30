@@ -39,7 +39,7 @@ const Navbar = () => {
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row items-center gap-10">
-          <a href={resume} download="Abhishek.pdf">
+          <a href={resume} download="Abhishek's Resume.pdf">
             <button
               className={`${
                 active === Link.title ? "abhishek" : "abhishek-btn"
