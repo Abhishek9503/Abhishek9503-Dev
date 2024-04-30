@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import resume from "/src/Abhishek.pdf";
+import resume from "/src/Abhishek's Resume.pdf";
+
 import { Router } from "react-router-dom";
 
 const Navbar = () => {
@@ -57,7 +58,6 @@ const Navbar = () => {
                 </svg>{" "}
                 Download Cv
               </span>
-              
             </button>
           </a>
 
@@ -124,10 +124,6 @@ const Navbar = () => {
               <a href={` #${Link.id}`}> {Link.title}</a>
             </li>
           ))}
-
-
-      
-
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -142,7 +138,6 @@ const Navbar = () => {
           absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex  justfy-end items-start flex-col gap-4">
-
               <a href={resume} download="Abhishek Abhishek.pdf">
                 <button
                   className={`${
@@ -164,30 +159,30 @@ const Navbar = () => {
                 </button>
               </a>
               <Link
-            ref={linkRef}
-            to="/project"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-            className={`${
-              active === Link.title ? "  text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
-          >
-            Projects
-          </Link>
+                ref={linkRef}
+                to="/project"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className={`${
+                  active === Link.title ? "  text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              >
+                Projects
+              </Link>
 
-          <Link
-            ref={linkRef}
-            to="/Experience"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-            className={`${
-              active === Link.title ? "  text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
-          >
-            Experience
-          </Link>
+              <Link
+                ref={linkRef}
+                to="/Experience"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className={`${
+                  active === Link.title ? "  text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              >
+                Experience
+              </Link>
 
               {navLinks.map((Link) => (
                 <li
