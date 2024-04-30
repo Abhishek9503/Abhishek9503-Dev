@@ -2,7 +2,6 @@ import React from "react";
 
 import { logo } from "../assets";
 import { styles } from "../styles";
-import Clock from "./Clock";
 
 const Footer = () => {
   return (

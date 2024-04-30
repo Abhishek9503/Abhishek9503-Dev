@@ -89,7 +89,6 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import Tweets from "./pages/Blogs";
 import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import { BsArrowUp } from "react-icons/bs";
@@ -97,9 +96,6 @@ import Project from "./pages/Project";
 import Playground from "./pages/Playground";
 import   Experience from "./pages/Experience";
 
-import MouseFollower from "mouse-follower";
-
-import Blogs from "./pages/Blogs";
 import Gallery from "./pages/Gallery";
 
 const App = () => {
