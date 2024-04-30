@@ -1,0 +1,14 @@
+#upev {
+  -webkit-transform: translateY(-36px);
+  transform: translateY(-36px);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 35px;
+  filter: invert(var(--upev-lotte-invert-amount));
+}
+@media only screen and (max-width: 600px) {
+  #upev {
+    display: none;
+  }
+}

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import _default from '../themes/default';
 
 export const Container = styled.div`
- background-color: #1d1d28 ;
+ background-color: #050816 ;
     display: flex;
     flex-direction: column;
     justify-content: center;

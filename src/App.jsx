@@ -100,6 +100,7 @@ import   Experience from "./pages/Experience";
 import MouseFollower from "mouse-follower";
 
 import Blogs from "./pages/Blogs";
+import Gallery from "./pages/Gallery";
 
 const App = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -176,6 +177,13 @@ const App = () => {
             <div className="bg-primary">
 
               <Experience />
+            </div>
+          } />
+
+<Route exact path="/Gallery" element={
+            <div className="bg-primary">
+
+              <Gallery />
             </div>
           } />
         </Routes>

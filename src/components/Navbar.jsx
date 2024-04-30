@@ -13,7 +13,7 @@ const Navbar = () => {
   const { linkRef } = useRef(null);
   return (
     <nav
-      className={` ${styles.paddingX}  w-full flex items-center py-2 fixed top-0 z-20 backdrop-blur-md`}
+      className={` ${styles.paddingX}  w-full flex items-center py-2 fixed top-0 z-20  backdrop-blur-md`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -85,6 +85,19 @@ const Navbar = () => {
             } hover:text-white text-[18px] font-medium cursor-pointer`}
           >
             Experience
+          </Link>
+
+          <Link
+            ref={linkRef}
+            to="/Gallery"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className={`${
+              active === Link.title ? "  text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Gallery
           </Link>
 
           <Link

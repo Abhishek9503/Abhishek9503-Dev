@@ -1,0 +1,10 @@
+#lottie {
+  position: relative;
+  left: 5vw;
+  bottom: 20vh;
+}
+@media (max-width: 500px) {
+  #lottie {
+    display: none !important;
+  }
+}

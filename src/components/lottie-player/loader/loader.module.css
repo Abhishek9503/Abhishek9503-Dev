@@ -1,0 +1,5 @@
+.load {
+  pointer-events: none;
+  z-index: 1003;
+  width: 20vw;
+}

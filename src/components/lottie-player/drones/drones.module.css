@@ -1,0 +1,24 @@
+#drones {
+  z-index: 10;
+  position: absolute;
+  background: transparent;
+  left: 46%;
+  width: 400px;
+  height: 400px;
+  top: 31vw;
+}
+
+@media screen and (max-width: 1400px) {
+  #drones {
+    width: 400px;
+    height: 400px;
+
+    top: 14%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #drones {
+    display: none;
+  }
+}
