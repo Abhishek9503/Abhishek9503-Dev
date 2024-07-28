@@ -92,7 +92,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import ExperienceCard from "../cards/ExperienceCard.jsx";
+import ExperienceCard from "../cards/ExperienceCard";
 import { experiences1 } from "../constants/index.js";
 
 const Container = styled.div`
