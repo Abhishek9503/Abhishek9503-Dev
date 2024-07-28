@@ -156,7 +156,7 @@ import {
   ToggleButton,
   Divider,
 } from "./ProjectStyle";
-import ProjectCard from "../cards/ProjectCards.jsx";
+import ProjectCard from "../Cards/ProjectCards.jsx";
 import { projects1 } from "../constants/index.js";
 import { styles } from "../styles";
 
