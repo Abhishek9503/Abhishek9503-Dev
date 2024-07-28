@@ -56,8 +56,6 @@
 
 // export default BallCanvas;
 
-
-
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
@@ -68,20 +66,19 @@ import {
   useTexture,
 } from "@react-three/drei";
 
-import CanvasLoader from "../Loader";
+import CanvasLoader from "../Loaders/Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-   
-  <>
+    <>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -94,17 +91,16 @@ const Ball = (props) => {
           flatShading
         />
       </mesh>
-  </>
-    
+    </>
   );
 };
 
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      // frameloop='demand'
-      // dpr={[1, 2]}
-      // gl={{ preserveDrawingBuffer: true }}
+    // frameloop='demand'
+    // dpr={[1, 2]}
+    // gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />

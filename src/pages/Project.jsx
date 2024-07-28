@@ -144,71 +144,128 @@
 
 // export default SectionWrapper(Works, "");
 
-
-
-
-import React from 'react'
-import { useState } from 'react'
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectStyle'
-import ProjectCard from '../Cards/ProjectCards'
-import { projects1 } from '../constants/index.js'
+import React from "react";
+import { useState } from "react";
+import {
+  Container,
+  Wrapper,
+  Title,
+  Desc,
+  CardContainer,
+  ToggleButtonGroup,
+  ToggleButton,
+  Divider,
+} from "./ProjectStyle";
+import ProjectCard from "../cards/ProjectCards.jsx";
+import { projects1 } from "../constants/index.js";
 import { styles } from "../styles";
 
-const Projects = ({openModal,setOpenModal}) => {
-  const [toggle, setToggle] = useState('all');
+const Projects = ({ openModal, setOpenModal }) => {
+  const [toggle, setToggle] = useState("all");
   return (
-    <Container id="projects" className='pt-20'>
-      <Wrapper className='bg-[#050816]'>
-        <h2 className={`${styles.sectionHeadText} bg-[#050816] text-center md:mt-2 sm:mt-10   mb-[-20px] flux`}>Projects</h2>
+    <Container id="projects" className="pt-20">
+      <Wrapper className="bg-[#050816]">
+        <h2
+          className={`${styles.sectionHeadText} bg-[#050816] text-center md:mt-2 sm:mt-10   mb-[-20px] flux`}
+        >
+          Projects
+        </h2>
         <Desc className={`${styles.sectionSubText} text-center  `}>
-          I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
+          I have worked on a wide range of projects. From web apps to android
+          apps. Here are some of my projects.
         </Desc>
-        <ToggleButtonGroup >
-          {toggle === 'all' ?
-            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-            :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-          }
+        <ToggleButtonGroup>
+          {toggle === "all" ? (
+            <ToggleButton active value="all" onClick={() => setToggle("all")}>
+              All
+            </ToggleButton>
+          ) : (
+            <ToggleButton value="all" onClick={() => setToggle("all")}>
+              All
+            </ToggleButton>
+          )}
           <Divider />
-          {toggle === 'full stack' ?
-            <ToggleButton active value="full stack" onClick={() => setToggle('full stack')}>Full Stack</ToggleButton>
-            :
-            <ToggleButton value="full stack" onClick={() => setToggle('full stack')}>Full Stack</ToggleButton>
-          }
+          {toggle === "full stack" ? (
+            <ToggleButton
+              active
+              value="full stack"
+              onClick={() => setToggle("full stack")}
+            >
+              Full Stack
+            </ToggleButton>
+          ) : (
+            <ToggleButton
+              value="full stack"
+              onClick={() => setToggle("full stack")}
+            >
+              Full Stack
+            </ToggleButton>
+          )}
           <Divider />
-          {toggle === 'react' ?
-            <ToggleButton active value="react" onClick={() => setToggle('react')}>React</ToggleButton>
-            :
-            <ToggleButton value="react" onClick={() => setToggle('react')}>React</ToggleButton>
-          }
-        
+          {toggle === "react" ? (
+            <ToggleButton
+              active
+              value="react"
+              onClick={() => setToggle("react")}
+            >
+              React
+            </ToggleButton>
+          ) : (
+            <ToggleButton value="react" onClick={() => setToggle("react")}>
+              React
+            </ToggleButton>
+          )}
+
           <Divider />
-          {toggle === 'javascript' ?
-            <ToggleButton active value="javascript" onClick={() => setToggle('javascript')}>JavaScript</ToggleButton>
-            :
-            <ToggleButton value="javascript" onClick={() => setToggle('javascript')}>JavaScript</ToggleButton>
-          }
+          {toggle === "javascript" ? (
+            <ToggleButton
+              active
+              value="javascript"
+              onClick={() => setToggle("javascript")}
+            >
+              JavaScript
+            </ToggleButton>
+          ) : (
+            <ToggleButton
+              value="javascript"
+              onClick={() => setToggle("javascript")}
+            >
+              JavaScript
+            </ToggleButton>
+          )}
           <Divider />
-          {toggle === 'html' ?
-            <ToggleButton active value="html" onClick={() => setToggle('html')}>HTML&CSS</ToggleButton>
-            :
-            <ToggleButton value="html" onClick={() => setToggle('html')}>HTML&CSS</ToggleButton>
-          }
+          {toggle === "html" ? (
+            <ToggleButton active value="html" onClick={() => setToggle("html")}>
+              HTML&CSS
+            </ToggleButton>
+          ) : (
+            <ToggleButton value="html" onClick={() => setToggle("html")}>
+              HTML&CSS
+            </ToggleButton>
+          )}
         </ToggleButtonGroup>
         <CardContainer>
-          {toggle === 'all' && projects1
-            .map((project) => (
-              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+          {toggle === "all" &&
+            projects1.map((project) => (
+              <ProjectCard
+                project={project}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
             ))}
           {projects1
             .filter((item) => item.category == toggle)
             .map((project) => (
-              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+              <ProjectCard
+                project={project}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
             ))}
         </CardContainer>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

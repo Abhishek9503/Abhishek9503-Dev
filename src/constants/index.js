@@ -460,6 +460,42 @@ const testimonials = [
   },
 ];
 
+
+const certificates = [
+  {
+    project: "Full Stack Developer",
+    testimonial: webdev,
+    name: "Suraksha Sanket",
+    designation: "Advanced CCTV analytics solution",
+    company:
+      " Suraksha-Sanket is a web application created to detect Crimes, Infiltration and Unauthorized access. A video analytics software that will use the Machine Learning Algorithms to detect criminal activities during live streaming of video cameras. ",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    source_code_link: "https://github.com/Abhishek9503",
+  },
+
+  {
+    project: "Data Structure & Algo",
+    testimonial: certificate1,
+    name: "Study Notion",
+    designation: "Study Notion",
+    company:
+      "Made through MERN stack, revolutionizes education with seamless connectivity and immersive learning experiences. Embrace the future of education as we redefine knowledge acquisition and empower learners worldwide.",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    source_code_link: "https://github.com/Abhishek9503",
+  },
+
+  {
+    project: "Ai Builder",
+    testimonial: fitt,
+    name: "Blender Projects ",
+    designation: "Udemy",
+    company:
+      "In the coming months, I will embark on an enriching journey to enhance my skills in 3D graphics and animation through the Udemy course on Blender. I will delve into the intricacies of modeling, texturing, lighting, rigging, animation, and visual effects, gaining a profound understanding of each aspect.",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    source_code_link: "https://github.com/Abhishek9503",
+  },
+];
+
 const projects = [
   {
     name: "NexuVents",
@@ -1092,4 +1128,4 @@ export const projects1 = [
 ];
 
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects , certificates};
