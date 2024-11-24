@@ -33,21 +33,17 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+     
           <Navbar />
-        </div>
         <Routes>
           <Route
             path="/"
             element={
               <div className="relative z-0 bg-primary">
-                <div className="bg-cover bg-no-repeat bg-center">
-                  <Navbar />
                   <div className="relative z-0">
                     <Hero />
                     <StarsCanvas />
-                  </div>
-                </div>
+                   </div>
                 <Tech />
                 <About />
                 <Works />
@@ -57,9 +53,19 @@ const App = () => {
                   <StarsCanvas />
                 </div>
                 <Footer />
+
+                {showBackToTop && (
+        <button
+          className="fixed bottom-4 right-4 p-2 cursor-pointer backToTop"
+          onClick={handleBackToTop}
+        >
+          <BsArrowUp />
+        </button>
+      )}
               </div>
             }
           />
+
           <Route
             path="/project"
             element={
@@ -79,14 +85,8 @@ const App = () => {
           />
         </Routes>
       </BrowserRouter>
-      {showBackToTop && (
-        <button
-          className="fixed bottom-4 right-4 p-2 cursor-pointer backToTop"
-          onClick={handleBackToTop}
-        >
-          <BsArrowUp />
-        </button>
-      )}
+
+     
     </div>
   );
 };

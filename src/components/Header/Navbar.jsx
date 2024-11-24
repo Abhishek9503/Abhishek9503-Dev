@@ -40,6 +40,7 @@ const Navbar = () => {
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row items-center gap-10">
+          
           <a href={resume} download="Abhishek.pdf">
             <button
               className={`${
@@ -87,19 +88,7 @@ const Navbar = () => {
             Experience
           </Link>
 
-          <Link
-            ref={linkRef}
-            to="/Gallery"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-            className={`${
-              active === Link.title ? "  text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
-          >
-            Gallery
-          </Link>
-
+{/* 
           <Link
             ref={linkRef}
             to="/play"
@@ -111,19 +100,8 @@ const Navbar = () => {
             } hover:text-white text-[18px] font-medium cursor-pointer`}
           >
             Playground
-          </Link>
+          </Link> */}
 
-          {navLinks.map((Link) => (
-            <li
-              key={Link.id}
-              className={`${
-                active === Link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(Link.title)}
-            >
-              <a href={` #${Link.id}`}> {Link.title}</a>
-            </li>
-          ))}
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -183,22 +161,7 @@ const Navbar = () => {
               >
                 Experience
               </Link>
-
-              {navLinks.map((Link) => (
-                <li
-                  key={Link.id}
-                  className={`${
-                    active === Link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium  cursor-pointer  text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(Link.title);
-                  }}
-                >
-                  <a href={` #${Link.id}`}> {Link.title}</a>
-                </li>
-              ))}
-
+  
               <a href="https://hashnode.com/@Abhishek9503" target="_blank">
                 <button
                   className={`${
@@ -220,6 +183,8 @@ const Navbar = () => {
                   <span className="flex items-center"> Socials</span>
                 </button>
               </a>
+
+
             </ul>
           </div>
         </div>
