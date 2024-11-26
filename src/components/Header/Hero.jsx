@@ -62,7 +62,7 @@ const Hero = () => {
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} cursor-pointer  h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse  pl-25 md:pl-10 mt-10 sm:justify-center items-start  md:gap-20 gap-5  pt-20`}
+        className={`${styles.paddingX} cursor-pointer  h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse  pl-25 md:pl-10 sm:mt-10 sm:justify-center items-start  md:gap-20 gap-5  pt-20`}
       >
         <div>
           <div className="flex gap-3 ">

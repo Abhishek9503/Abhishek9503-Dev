@@ -16,9 +16,8 @@ const Navbar = () => {
     <nav
       className={` px-5 w-full  flex items-center py-2 fixed top-0 z-20  backdrop-blur-md`}
     >
-<div className=" glow-on-hover w-full flex justify-between border rounded-lg px-2 items-center max-w-7xl ">
-
-<Link
+      <div className=" glow-on-hover w-full flex justify-between border rounded-lg px-2 items-center max-w-7xl ">
+        <Link
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
@@ -41,7 +40,6 @@ const Navbar = () => {
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row items-center gap-10">
-          
           <a href={resume} download="Abhishek.pdf">
             <button
               className={`${
@@ -89,7 +87,6 @@ const Navbar = () => {
             Experience
           </Link>
 
-
           <Link
             to="/statistics"
             onClick={() => {
@@ -102,7 +99,7 @@ const Navbar = () => {
             Code Statistics
           </Link>
 
-{/* 
+          {/* 
           <Link
             ref={linkRef}
             to="/play"
@@ -115,7 +112,6 @@ const Navbar = () => {
           >
             Playground
           </Link> */}
-
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -175,30 +171,18 @@ const Navbar = () => {
               >
                 Experience
               </Link>
-  
-              <a href="https://hashnode.com/@Abhishek9503" target="_blank">
-                <button
-                  className={`${
-                    active === Link.title ? "  text-white" : "text-secondary"
-                  } hover:text-white text-[18px] font-medium cursor-pointer`}
-                  onClick={() => setActive(Link.title)}
-                >
-                  <span className="flex items-center"> Blogs</span>
-                </button>
-              </a>
 
-              <a href="https://abhishek-bio.onrender.com/" target="_blank">
-                <button
-                  className={`${
-                    active === Link.title ? "  text-white" : "text-secondary"
-                  } hover:text-white text-[18px] font-medium cursor-pointer`}
-                  onClick={() => setActive(Link.title)}
-                >
-                  <span className="flex items-center"> Socials</span>
-                </button>
-              </a>
-
-
+              <Link
+                to="/statistics"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className={`${
+                  active === Link.title ? "  text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              >
+                Code Statistics
+              </Link>
             </ul>
           </div>
         </div>
