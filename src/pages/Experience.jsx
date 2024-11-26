@@ -21,7 +21,6 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 40px 0px 80px 0px;
   @media (max-width: 960px) {
     padding: 0px;
   }
@@ -56,8 +55,9 @@ const TimelineSection = styled.div`
 const index = () => {
   return (
     <Container id="experience">
-      <Wrapper>
-        <div variants={textVariant()}>
+      <Wrapper >
+        <div className="sm:flex sm:h-[420px]">
+        <div className="mt-40" variants={textVariant()}>
           <p className={`${styles.sectionSubText} text-center  `}>
             What I have done so far
           </p>
@@ -65,7 +65,8 @@ const index = () => {
             My Experience.
           </h2>
         </div>
-        <TimelineSection>
+      <div className="overflow-y-scroll">
+      <TimelineSection>
           <Timeline>
             {experiences1.map((experience, index) => (
               <TimelineItem>
@@ -82,6 +83,8 @@ const index = () => {
             ))}
           </Timeline>
         </TimelineSection>
+      </div>
+        </div>
       </Wrapper>
     </Container>
   );

@@ -80,32 +80,15 @@ const Hero = () => {
               </h1>
 
               <p
-                className={`${styles.heroSubText} mt-2 text-white-100 max-w-lg`}
+                className={`${styles.heroSubText} h-8 mt-2 text-white-100 max-w-lg`}
               >
                 {text}{" "}
               </p>
             </div>
           </div>
 
-          <div className="flex">
-            <a
-              href="#tech"
-              className="  w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none"
-            >
-              <div className=" group border-[3px] border-white rounded-full md:h-12 h-10 w-7 flex justify-center lg:scale-100 scale-75">
-                <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
-              </div>
-
-              <p className=" ">
-                {/* <span className="faulty-letter">Down</span><span className=" glowing-txt">Scroll</span>
-              
-               */}
-                Scroll Down
-              </p>
-            </a>
-          </div>
-
-          <div className="text-[30px] md:text-[35px] flex justify-center gap-5   items-center md:mt-10 mt-5 md:gap-12 cursor-pointer mb-20  ">
+        
+          <div className="text-[30px] md:text-[35px] flex justify-center gap-5   items-center md:mt-10 mt-8 md:gap-12 cursor-pointer mb-20  ">
             <Link
               target="_blank"
               to="https://www.linkedin.com/in/abhishek-yadav17/"
@@ -132,6 +115,8 @@ const Hero = () => {
               <BsInstagram className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
             </Link>
           </div>
+         
+
         </div>
 
         <div ref={ref} className="w-full mt-10 ">

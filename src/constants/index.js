@@ -133,6 +133,30 @@ const technologies = [
     name: "blender",
     icon: blender,
   },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "blender",
+    icon: blender,
+  },
 ];
 
 const experiences = [

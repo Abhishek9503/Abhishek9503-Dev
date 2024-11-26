@@ -14,10 +14,11 @@ const Navbar = () => {
   const { linkRef } = useRef(null);
   return (
     <nav
-      className={` ${styles.paddingX}  w-full flex items-center py-2 fixed top-0 z-20  backdrop-blur-md`}
+      className={` px-5 w-full  flex items-center py-2 fixed top-0 z-20  backdrop-blur-md`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
+<div className=" glow-on-hover w-full flex justify-between border rounded-lg px-2 items-center max-w-7xl ">
+
+<Link
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
@@ -28,11 +29,11 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-16 h-20  
+            className="w-12 h-12 
         object-contain  "
           />
           <p
-            className="text-white text-[18px]  mt-4 
+            className="text-white text-[18px]
         font-bold cursor-pointer flex"
           >
             Full Stack Developer&nbsp; <span className="sm:block hidden"></span>
@@ -86,6 +87,19 @@ const Navbar = () => {
             } hover:text-white text-[18px] font-medium cursor-pointer`}
           >
             Experience
+          </Link>
+
+
+          <Link
+            to="/statistics"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className={`${
+              active === Link.title ? "  text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Code Statistics
           </Link>
 
 {/* 

@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import { BsArrowUp } from "react-icons/bs";
 import { Experience, Playground, Project } from "./pages";
+import Statisticspage from "./components/MainPage/Statisticspage";
 
 const App = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -33,7 +34,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-     
+
           <Navbar />
         <Routes>
           <Route
@@ -47,12 +48,12 @@ const App = () => {
                 <Tech />
                 <About />
                 <Works />
-                <Feedbacks />
+                {/* <Feedbacks /> */}
                 <div className="relative z-0">
                   <Contact />
                   <StarsCanvas />
                 </div>
-                <Footer />
+                {/* <Footer /> */}
 
                 {showBackToTop && (
         <button
@@ -80,6 +81,14 @@ const App = () => {
             element={
               <div className="bg-primary">
                 <Experience />
+              </div>
+            }
+          />
+          <Route
+            path="/statistics"
+            element={
+              <div className="bg-primary">
+                <Statisticspage/>
               </div>
             }
           />

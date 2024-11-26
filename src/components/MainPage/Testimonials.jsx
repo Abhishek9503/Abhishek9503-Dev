@@ -27,7 +27,7 @@ const FeedbackCard = ({
       {/* <p className='text-white tracking-wider text-[18px]'>{testimonial}</p> */}
       <img src={testimonial} alt="Project Image" />
 
-      {/* <div className="mt-7 flex justify-between items-center gap-1">
+       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
           <p className="text-yellow-400  text-[16px] font-bold">
             <span className="blue-text-gradient"></span> {name}
@@ -48,7 +48,7 @@ const FeedbackCard = ({
             className="w-10 h-10 rounded-full object-cover"
           />
         </a>
-      </div> */}
+      </div> 
     </div>
   </motion.div>
 );

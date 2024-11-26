@@ -1,0 +1,56 @@
+/* Container for the grid */
+.testimonials-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Consistent gaps between the cards */
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background */
+  }
+  
+  /* Individual card styling */
+  .testimonial-card {
+    background-color: #2a2a2a; /* Dark gray background for cards */
+    color: #fff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  /* Header section of the card */
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Avatar styling */
+  .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Name and username */
+  .testimonial-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .testimonial-username {
+    font-size: 0.9rem;
+    color: #aaa; /* Lighter gray for the username */
+  }
+  
+  /* Text content */
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc; /* Light gray for the text */
+  }
+  

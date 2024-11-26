@@ -124,7 +124,7 @@ const Skills = styled.div`
     width: 100%;
     display: flex;
     gap: 12px;
-    margin-top: -10px;
+    margin-top: 10px;
 `
 
 const ItemWrapper = styled.div`
@@ -134,6 +134,9 @@ const ItemWrapper = styled.div`
 `
 
 const Skill = styled.div`
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 2px 8px;
     font-size: 15px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
@@ -156,15 +159,12 @@ const ExperienceCard = ({ experience }) => {
                 </Body>
             </Top>
             <Description>
-                {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
-
-                }
+               
                 {experience?.skills &&
                     <>
-                        <br />
+
                         <Skills>
-                            <b>Skills:</b>
+                            {/* <b>Skills:</b> */}
                             <ItemWrapper>
                                 {experience?.skills?.map((skill, index) => (
                                     <Skill>• {skill}</Skill>
@@ -172,6 +172,10 @@ const ExperienceCard = ({ experience }) => {
                             </ItemWrapper>
                         </Skills>
                     </>
+                }
+                 {experience?.desc &&
+                    <Span className='mt-4 text-gray-400'>{experience?.desc}</Span>
+
                 }
             </Description>
              {/*  {experience.doc &&
