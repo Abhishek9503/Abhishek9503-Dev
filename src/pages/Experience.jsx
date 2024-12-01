@@ -34,7 +34,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 80px 0;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -54,9 +53,9 @@ const TimelineSection = styled.div`
 
 const index = () => {
   return (
-    <Container id="experience">
-      <Wrapper >
-        <div className="sm:flex sm:h-[420px]">
+    <Container className="h-[100%] sm:h-screen "  id="experience">
+      <Wrapper  >
+        <div className="sm:flex sm:h-[70vh]">
         <div className="mt-40" variants={textVariant()}>
           <p className={`${styles.sectionSubText} text-center  `}>
             What I have done so far

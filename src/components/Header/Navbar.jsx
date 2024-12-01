@@ -14,7 +14,7 @@ const Navbar = () => {
   const { linkRef } = useRef(null);
   return (
     <nav
-      className={` px-5 w-full  flex items-center py-2 fixed top-0 z-20  backdrop-blur-md`}
+      className={` px-5 w-full  flex justify-center items-center py-2 fixed top-0 z-20  backdrop-blur-md`}
     >
       <div className=" glow-on-hover w-full flex justify-between border rounded-lg px-2 items-center max-w-7xl ">
         <Link

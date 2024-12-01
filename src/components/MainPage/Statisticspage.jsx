@@ -12,6 +12,7 @@ import diwali from "../../assets/my-images/diwali.jpg" ;
 import launch from "../../assets/my-images/launch.jpg" ;
 import mic from "../../assets/my-images/mic.jpg" ;
 import prize from "../../assets/my-images/prize.jpg" ;
+import { holophin } from "../../assets";
 
 const StatisticPage = () => {
 
@@ -44,7 +45,7 @@ const StatisticPage = () => {
 
   return (
     <>
-      <div className="flex justify-between mr-10">
+      <div className="flex justify-between  mt-12 md:mt-2">
         <motion.div variants={textVariant()}>
           <div>
             {/* <p className={`${styles.sectionSubText} mt-10`}>My work</p> */}
@@ -82,7 +83,7 @@ const StatisticPage = () => {
         </motion.p>
       </div> */}
 
-      <div className="mt-10 flex flex-wrap gap-20">
+      <div className="mt-10 flex items-center justify-center flex-wrap gap-20">
         <Tilt transition-all>
           <a href="https://app.daily.dev/Abhishek9503">
             <img
@@ -92,6 +93,9 @@ const StatisticPage = () => {
               alt="Abhishek Yadav's Dev Card"
             />
           </a>
+
+          <img src="https://komarev.com/ghpvc/?username=Abhishek9503" alt="Profile Views" />
+
         </Tilt>
 
         <div className="abhishek">
@@ -124,7 +128,11 @@ const StatisticPage = () => {
           </a>
         </div>
 
-        {/* <img className="mt-1" src={holophin} alt="holphin" /> */}
+        <img className="mt-1" src={holophin} alt="holphin" />
+
+
+      
+
 
         <AnimatedTestimonials testimonials={testimonials}/>
 
