@@ -43,7 +43,6 @@ const App = () => {
               <div className="relative z-0 bg-primary">
                   <div className="relative z-0">
                     <Hero />
-                    <StarsCanvas />
                    </div>
                 <Tech />
                 <About />
