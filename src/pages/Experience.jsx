@@ -60,7 +60,7 @@ const index = () => {
           <p className={`${styles.sectionSubText} text-center  `}>
             What I have done so far
           </p>
-          <h2 className={`${styles.sectionHeadText} text-center flux`}>
+          <h2 className={`${styles.sectionHeadText} text-center `}>
             My Experience.
           </h2>
         </div>
